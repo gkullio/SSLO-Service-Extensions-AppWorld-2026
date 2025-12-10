@@ -14,7 +14,7 @@ Here is a visual representation of the virtual lab environment. The numbers insi
 
 The first interface is connected to the client-facing VLAN. The last interface is connected to the Internet-facing VLAN. One of the tagged interfaces connects to the application server VLAN. The remaining interfaces are connected to various types of security services: L2, L3, HTTP, ICAP, and passive Tap. The SSL Orchestrator management interface is not shown.
 
-.. image:: ./images/labinfo-1.png
+.. image:: ./images/v21-SSLO-Environment-with-text.png
    :align: left
 
 
