@@ -160,9 +160,11 @@ The following tables provide device/service network configuration details. Login
    * - WEB SHELL
      - N/A
      - N/A
-   * - RDP / SUDO
-     - ubuntu
-     - agility
+   * - WEBRDP (Guacamole)
+     - user
+     - user
+
+The **WEBRDP** service leverages an instance of Guacamole running on the Ubuntu-Client. This acts as a web-based RDP client that connects to the Ubuntu-Client desktop GUI.
 
 |
 
@@ -200,12 +202,6 @@ The following tables provide device/service network configuration details. Login
    * - WEB SHELL
      - N/A
      - N/A
-   * - WEBRDP (Guacamole)
-     - user
-     - user
-
-The **WEBRDP** service leverages an instance of Guacamole running on the Ubuntu-Server. This acts as a web-based RDP client that connects to the Ubuntu-Client desktop GUI.
-
 |
 
 **Inline Layer 2 Service**
