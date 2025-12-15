@@ -49,10 +49,10 @@ If you are not familiar with the process for joining an F5 UDF-based training co
           TMUI - Browser-based GUI session
       * - Ubuntu-Server
         - WEB SHELL - Browser-based SSH session
-
-          WEBRDP - Browser-based RDP to **Ubuntu-Client** Desktop
       * - Ubuntu-Client
         - WEB SHELL - Browser-based SSH session
+
+          WEBRDP - Browser-based RDP to **Ubuntu-Client** Desktop
 
    |
 
