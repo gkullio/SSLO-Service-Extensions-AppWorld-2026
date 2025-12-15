@@ -10,6 +10,7 @@ If you are not familiar with the process for joining an F5 UDF-based training co
 
    .. important::
       **Multi-Factor Authentication is required**
+         
       If MFA is not configured for your account, you will be asked to set it up before proceeding.
 
 
