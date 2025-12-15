@@ -63,11 +63,11 @@ If you are not familiar with the process for joining an F5 UDF-based training co
 
 |
 
- .. note::
+   .. note::
 
-    You will only need your local web browser to access the lab resources. Browser-based Remote Desktop access to the **Ubuntu-Client** is provided via the Guacamole service (**WEBRDP** access link).
+      You will only need your local web browser to access the lab resources. Browser-based Remote Desktop access to the **Ubuntu-Client** is provided via the Guacamole service (**WEBRDP** access link).
 
-    .. image:: ./images/udf-access-2.png
+   .. image:: ./images/udf-access-2.png
       :align: left
 
 
