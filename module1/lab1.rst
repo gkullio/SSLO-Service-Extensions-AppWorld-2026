@@ -9,6 +9,7 @@ If you are not familiar with the process for joining an F5 UDF-based training co
 #. You should have received a course registration email that contains the **UDF Course link**. Click on the link and log into the UDF student portal.
 
    .. important::
+      **Multi-Factor Authentication is required**
       If MFA is not configured for your account, you will be asked to set it up before proceeding.
 
 
