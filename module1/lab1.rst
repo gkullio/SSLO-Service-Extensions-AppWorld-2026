@@ -61,7 +61,7 @@ If you are not familiar with the process for joining an F5 UDF-based training co
    .. image:: ./images/udf-access-1.png
       :align: left
 
-|
+
 
    .. note::
 
