@@ -35,7 +35,7 @@ Download the Installation Script
 
    .. tip::
 
-      Click the **copy** icon in the URL text box above and paste it into the **Ubuntu-Client - Web Shell** session. If your local machine is Windows, press the <CTRL>-<SHIFT>-V combination to paste.
+      Click the **copy** icon in the URL text box above and paste it into the **BIG-IP SSLO - Web Shell** session. If your local machine is Windows, press the <CTRL>-<SHIFT>-V combination to paste.
 
 
 
@@ -72,7 +72,12 @@ Run the Installation Script
 Verify Object Creation
 --------------------------------------------------------------------------------
 
-#. Switch to your local web browser tab that contains the **BIG-IP TMUI**.
+#. From the UDF **Deployment** tab, access the TMUI of the **BIG-IP SSL Orchestrator** resource. This will open a new browser tab with a GUI session (login as the **admin** user with the password **admin**).
+
+   .. image:: images/udf-sslo-tmui.png
+      :align: left
+
+
 
 
 #. Navigate to **Local Traffic > iRules** and verify that the following iRules are present.
