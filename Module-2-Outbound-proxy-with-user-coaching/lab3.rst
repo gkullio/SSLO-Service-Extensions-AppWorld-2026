@@ -114,7 +114,7 @@ Create Service Chains
 Create Security Policy
 --------------------------------------------------------------------------------
 
-The **Security Policy** contains 2 default rules: **Pinners_Rule** and **All Traffic**.
+#. The **Security Policy** contains 2 default rules: **Pinners_Rule** and **All Traffic**.
 
    .. image:: ./images/l3outbound-policy-1.png
       :align: left
