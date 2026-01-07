@@ -149,20 +149,21 @@ Test User Coaching
 
 #. Close the **Firefox** browser window and restart the application.
 
-#. Navigate to https://copilot.microsoft.com/. You should receive the SSL Orchestrator user coaching prompt as follows:
+#. Navigate to https://chatgpt.com/. You should receive the SSL Orchestrator user coaching prompt as follows:
 
    .. image:: ./images/user-coaching-13.png
       :align: left
 
 
-#. Click on the **Agree** button to acknowledge the warning and terms of use policy. You will then be presented with the Microsoft Copilot site.
+#. Click on the **Agree** button to acknowledge the warning and terms of use policy. You will then be presented with the OpenAI ChatGPT site.
 
    .. image:: ./images/user-coaching-14.png
       :align: left
 
-#. Restart **Firefox** and browse to Copilot again. You should not see the prompt reappear because the original user coaching acknowledgement has not expired yet.
+#. Restart **Firefox** and browse to ChatGPT again. You should not see the prompt reappear because the original user coaching acknowledgement has not expired yet.
 
    .. note::
 
       The default user coaching session timeout setting is 3600 seconds. This value is configurable in the **user-coaching-rule** iRule.
+      **NEED TO ADDRESS THIS WITH KEVIN. Current behavior is that the prompt appears every time they access ChatGPT.**
 
