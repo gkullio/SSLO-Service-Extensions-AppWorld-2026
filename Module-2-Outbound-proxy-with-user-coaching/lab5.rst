@@ -58,7 +58,7 @@ Create a new service chain that contains the user coaching service.
 
 #. Enter ``user_coaching`` in the **Name** field.
 
-#. Double-click on the **ssloS_F5_UC** and **ssloS_F5_FEYE** Inspection Services to add them to the Service Chain. The **ssloS_F5_AWAF** service will not be used for outbound inspection.
+#. Double-click on the **ssloS_F5_UC**  Inspection Services to add it to the Service Chain. 
 
    .. image:: ./images/user-coaching-6.png
       :align: left
