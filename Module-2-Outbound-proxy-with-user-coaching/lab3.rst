@@ -82,6 +82,7 @@ No user authentication will be enabled at this time.
 
 #. Click on the **Save & Next** button to proceed to the next step in the configuration workflow.
 
+|
 
 Create Services
 --------------------------------------------------------------------------------
