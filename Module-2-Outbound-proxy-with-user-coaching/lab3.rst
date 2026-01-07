@@ -92,7 +92,7 @@ No user authentication will be enabled at this time.
 Create Services
 --------------------------------------------------------------------------------
 
-#. There will be one Inspection Serivce **ssloS_F5_UC**.  Recall that this service was created by the **SSLO User Coaching** script.
+#. There will be one Inspection Service **ssloS_F5_UC**.  Recall that this service was created by the **SSLO User Coaching** script.
 
    .. image:: ./images/l3outbound-services.png
       :align: left
