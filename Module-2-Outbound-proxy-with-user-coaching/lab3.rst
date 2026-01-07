@@ -87,7 +87,7 @@ No user authentication will be enabled at this time.
 Create Services
 --------------------------------------------------------------------------------
 
-There will be one Inspection Serivce **ssloS_F5_UC**.  Recall that this service was created by the **SSLO User Coaching** script.
+#. There will be one Inspection Serivce **ssloS_F5_UC**.  Recall that this service was created by the **SSLO User Coaching** script.
 
    .. image:: ./images/l3outbound-services.png
       :align: left
@@ -101,7 +101,7 @@ No additional services need to be created at this time.
 Create Service Chains
 --------------------------------------------------------------------------------
 
-This section is blank, because we have not yet created any Service Chains. We will create one in a upcoming section to demonstrate the **user coaching** function.
+#. This section is blank, because we have not yet created any Service Chains. We will create one in a upcoming section to demonstrate the **user coaching** function.
 
    .. image:: ./images/l3outbound-blank-service-chain.png
       :align: left
