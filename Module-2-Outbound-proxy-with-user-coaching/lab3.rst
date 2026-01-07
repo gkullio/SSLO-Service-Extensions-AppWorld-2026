@@ -121,7 +121,7 @@ The **Security Policy** contains 2 default rules: **Pinners_Rule** and **All Tra
 
 #. We will not be making any changes to the Security Policy at this time. 
 
-#.Scroll down to the bottom of the page and click on the **Save & Next** button to proceed to the next step in the configuration workflow.
+#. Scroll down to the bottom of the page and click on the **Save & Next** button to proceed to the next step in the configuration workflow.
 
 |
 
