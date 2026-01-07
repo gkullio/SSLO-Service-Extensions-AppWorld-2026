@@ -101,23 +101,11 @@ No additional services need to be created at this time.
 Create Service Chains
 --------------------------------------------------------------------------------
 
-This section is blank, because we have not yet created any Service Chains. So let's go ahead and create one!
+This section is blank, because we have not yet created any Service Chains. We will create one in a upcoming section to demonstrate the **user coaching** function.
 
-#. Click on the **Add** button to start creating a new Service Chain.
-
-   .. image:: ./images/l3outbound-add-chain.png
+   .. image:: ./images/l3outbound-blank-service-chain.png
       :align: left
 
-
-#. In the **Name** field, insert **user_coaching**.
-
-#. In the **Services** section, click on **ssloS_F5_UC** and click the right arrow to move it to the **Selected Service Chain Order** Box.
-
-   .. image:: ./images/l3outbound-service-chain-create.png
-      :align: left
-
-
-#. Click **Save** to save the Service Chain, and it will take you back to the **Service Chain List** page.
 
 #. Scroll down to the bottom of the page and click on the **Save & Next** button to proceed to the next step in the configuration workflow.
 
@@ -131,24 +119,9 @@ The **Security Policy** contains 2 default rules: **Pinners_Rule** and **All Tra
    .. image:: ./images/l3outbound-policy-1.png
       :align: left
 
-#. Click on the **Edit** (pencil) icon for the **All Traffic** rule.
+#. We will not be making any changes to the Security Policy at this time. 
 
-#. Set **Service Chain** to **ssloSC_user_coaching**. Recall that this Service Chain contains only the **ssloS_F5_UC** service.
-
-   .. image:: ./images/l3outbound-security-policy.png
-      :align: left
-
-
-#. Click on the **OK** button to exit edit mode.
-
-
-   Your **Security Policy** rules should now look like the following:
-
-   .. image:: ./images/l3outbound-security-policy-done.png
-      :align: left
-
-
-#. Click on the **Save & Next** button to continue.
+#.Scroll down to the bottom of the page and click on the **Save & Next** button to proceed to the next step in the configuration workflow.
 
 |
 
