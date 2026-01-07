@@ -59,6 +59,10 @@ On the **SSL Configurations** page, create the **Client-side SSL** profile for t
 
 #. In the **Key** drop-down list, select **subrsa.f5labs.com** to replace the default value.
 
+   .. image:: ./images/l3outbound-ca-ssl.png
+      :align: left
+
+
 #. Click on the **Done** button to apply the config change.
 
    .. image:: ./images/l3outbound-ssl.png
@@ -71,7 +75,7 @@ On the **SSL Configurations** page, create the **Client-side SSL** profile for t
 
 |
 
-User Authentication
+Authentication List
 --------------------------------------------------------------------------------
 
 No user authentication will be enabled at this time.
@@ -83,7 +87,7 @@ No user authentication will be enabled at this time.
 Create Services
 --------------------------------------------------------------------------------
 
-There are 3 Inspection Services. The **ssloS_FEYE** and **ssloS_F5_AWAF** services were created in the previous lab module. Recall that the **ssloS_F5_UC** service was created by the **SSLO User Coaching** script.
+There will be one Inspection Serivce **ssloS_F5_UC**.  Recall that this service was created by the **SSLO User Coaching** script.
 
    .. image:: ./images/l3outbound-services.png
       :align: left
@@ -97,12 +101,23 @@ No additional services need to be created at this time.
 Create Service Chains
 --------------------------------------------------------------------------------
 
-There are 2 Service Chains: **ssloSC_service_chain_1** and **ssloSC_service_chain_2**. These were created in the previous lab module.
+This section is blank, because we have not yet created any Service Chains. So let's go ahead and create one!
 
-   .. image:: ./images/l3outbound-chain.png
+#. Click on the **Add** button to start creating a new Service Chain.
+
+   .. image:: ./images/l3outbound-add-chain.png
       :align: left
 
-No additional Service Chains need to be created at this time.
+
+#. In the **Name** field, insert **user_coaching**.
+
+#. In the **Services** section, click on **ssloS_F5_UC** and click the right arrow to move it to the **Selected Service Chain Order** Box.
+
+   .. image:: ./images/l3outbound-service-chain-create.png
+      :align: left
+
+
+#. Click **Save** to save the Service Chain, and it will take you back to the **Service Chain List** page.
 
 #. Scroll down to the bottom of the page and click on the **Save & Next** button to proceed to the next step in the configuration workflow.
 
@@ -118,9 +133,9 @@ The **Security Policy** contains 2 default rules: **Pinners_Rule** and **All Tra
 
 #. Click on the **Edit** (pencil) icon for the **All Traffic** rule.
 
-#. Set **Service Chain** to **ssloSC_service_chain_1**. Recall that this Service Chain contains only the **ssloS_FEYE** service.
+#. Set **Service Chain** to **ssloSC_user_coaching**. Recall that this Service Chain contains only the **ssloS_F5_UC** service.
 
-   .. image:: ./images/l3outbound-policy-2.png
+   .. image:: ./images/l3outbound-security-policy.png
       :align: left
 
 
@@ -129,7 +144,7 @@ The **Security Policy** contains 2 default rules: **Pinners_Rule** and **All Tra
 
    Your **Security Policy** rules should now look like the following:
 
-   .. image:: ./images/l3outbound-policy-3.png
+   .. image:: ./images/l3outbound-security-policy-done.png
       :align: left
 
 
