@@ -55,6 +55,11 @@ On the **SSL Configurations** page, create the **Client-side SSL** profile for t
 
 #. In the **CA Certificate Key Chain** section, click on the **Edit** (pencil) icon.
 
+   .. image:: ./images/l3outbound-ca-ssl-edit-btn.png
+      :align: left
+
+
+
 #. In the **Certificate** drop-down list, select **subrsa.f5labs.com** to replace the default value.
 
 #. In the **Key** drop-down list, select **subrsa.f5labs.com** to replace the default value.
