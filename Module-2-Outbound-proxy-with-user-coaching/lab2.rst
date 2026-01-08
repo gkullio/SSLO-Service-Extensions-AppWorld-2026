@@ -7,7 +7,7 @@ User Coaching Script
 **User coaching** functionality is a Service Extension for SSL Orchestrator. An installation script automates the creation of the configuration objects needed to implement this functionality.
 
 The script creates the following objects:
-
+|
    - F5_UC Inspection Service - the user coaching Service Extension to interact with decrypted traffic flows.
    - User coaching iRule - injects the user blocking and coaching prompts, as well as optional logging.
    - TLS fingerprinting iRule - determines if a user has already completed the user coaching flow.
