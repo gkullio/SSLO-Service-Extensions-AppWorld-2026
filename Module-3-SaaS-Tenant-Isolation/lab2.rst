@@ -63,5 +63,37 @@ Run the Installation Script
       ./saas-tenant-isolation-installer.sh
 
 
-   .. image:: images/udf-sslo-webshell-2.png
+   .. image:: images/udf-saas-isolation-install.png
       :align: left
+
+
+
+Verify Object Creation
+--------------------------------------------------------------------------------
+
+#. From the UDF **Deployment** tab, access the TMUI of the **BIG-IP SSLO** resource. This will open a new browser tab with an SSH session.  As before, login with admin / admin.
+
+    .. image:: images/udf-sslo-tmui.png
+      :align: left
+
+
+
+
+#. Navigate to **Local Traffic > iRules** and verify that the following iRules are present.
+
+   - saas-tenant-irule
+
+   .. image:: images/udf-irule-verify.png
+      :align: left
+
+
+#. Navigate to **SSL Orchestrator > Configuration**. In the diagram, you should see the **ssloS_F5_SaaS-Tenant-Isolation** Inspection Service icon (along with the F5_UC that you previously deployed).
+
+#. Click on the **Services** tab and verify that the **ssloS_F5_SaaS-Tenant-Isolation** Inspection Service is present.
+
+   .. image:: images/udf-saas-isolation-install-verify.png
+      :align: left
+
+
+
+This completes the installation of the configuration objects needed to support the **SaaS Tenant Isolation** function. In a later step, you will add the resulting **ssloS_F5_SaaS-Tenant-Isolation** inspection Service to a decrypted traffic Service Chain and add the **saas-tenant-irule** iRule to the existing L3 Outbound Topology's Interception Rule.
