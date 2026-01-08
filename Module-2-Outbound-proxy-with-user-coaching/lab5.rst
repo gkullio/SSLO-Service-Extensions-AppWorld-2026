@@ -58,7 +58,7 @@ Create a new service chain that contains the user coaching service.
 
 #. Enter ``user_coaching`` in the **Name** field.
 
-#. Double-click on the **ssloS_F5_UC**  Inspection Services to add it to the Service Chain. 
+#. Double-click on the **ssloS_F5_UC** Service to add it to the Service Chain. 
 
    .. image:: ./images/user-coaching-6.png
       :align: left

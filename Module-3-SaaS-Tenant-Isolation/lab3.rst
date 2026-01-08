@@ -18,20 +18,82 @@ Inspect iRule *saas-tenant-rule*
 
 #. Please focus on lines 125-135 of the iRule. This is where we will test the proper insertion of headers for this lab. This section sets the static variable and array to define what headers and values are to be inserted.
 
-   .. image:: images/saas-irule-lab-test.png
+    .. image:: images/saas-irule-lab-test.png
       :align: left
 
-#. Now go to lines 241-248. This section executes the action based on the match of the URL. In this case, we are matching against httpbin.org.
+#. Now go to lines 241-248. This section executes the action based on the match of the URL. In this case, we are matching against httpbin.org. This is so we can actually see the headers being inserted.
 
-   .. image:: images/saas-irule-action.png
+    .. image:: images/saas-irule-action.png
       :align: left
 
-#. Now lets get back to the SSL Orchestrator UI and update the Interception Rule to use this Service Extension.
+
+#. Now lets get back to the SSL Orchestrator UI and update the Interception Rule to use this Service Extension. 
+
+Click on the **SSL Orchestrator** tab on the left side of the GUI, and then click **Configuration**.
 
 
 
 Modify Interception Rule
 --------------------------------------------------------------------------------
+
+#. In the **SSL Orchestrator UI**, click on the **Interception Rules** tab.
+
+    .. image:: ./images/saas-interception-rule.png
+      :align: left
+
+
+#. Click on the **sslo_l3_outbound-in-t-4** Interception Rule to view the **Summary** page.
+
+    .. note::
+
+      We are going to use the same interception rule for SaaS Tenant Isolation. All of the Service Extensions we are using in this lab can be stacked on top of a single Interception Rule and L3 Outbound topology.
+
+    .. image:: ./images/user-coaching-2.png
+      :align: left
+
+
+#. Click on the **Edit** (pencil) icon to view the settings.
+
+#. Scroll down to the **Resources > iRules** section and double-click on the **/Common/saas-tenant-irule** iRule to add it to the **Selected** panel.
+
+    .. image:: ./images/saas-interception-rule-assign.png
+      :align: left
+
+
+#. Click on the **Save & Next** button to return to the **Summary** page.
+
+   .. image:: ./images/user-coaching-4.png
+      :align: left
+
+
+#. Click on the **Deploy** button.
+
+#. When the deployment has completed, click on the **OK** button to close the dialog box and return to the **Topologies** list.
+
+
+
+Add SaaS Tenant Isolation to the existing *User Coaching* Service Chain
+--------------------------------------------------------------------------------
+
+It's time to add the SaaS Isolation Service to the existing Service Chain that was created in the previous lab.
+
+#. Click on the **Service Chains** tab and click the existing Service Chain **ssloSC_user_coaching**.
+
+    .. image:: ./images/saas-service-chain.png
+      :align: left
+
+#. The name field is already filled out as we are amending the existing Service Chain.
+
+#. Double-click on the **ssloS_F5_SaaS-Tenant-Isolation** Service to add to the Selected Service Chain Order.
+
+    .. image:: ./images/saas-service-chain-add.png
+      :align: left
+
+#. Click **Deploy** and then **OK** to acknowledge the warning.  Click **OK** again after the deployment has completed.
+
+
+
+
 
 
 
