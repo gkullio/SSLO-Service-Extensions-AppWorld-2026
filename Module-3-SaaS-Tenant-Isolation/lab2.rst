@@ -6,10 +6,10 @@ SaaS Tenant Isolation Script
 
 **SaaS Tenant Isolation** functionality is a Service Extension for SSL Orchestrator. An installation script automates the creation of the configuration objects needed to implement this functionality.
 
-The script creates the following objects:
-
+- The script creates the following objects:
    - F5_SaaS-Tenant-Isolation Inspection Service - the SaaS Tenant Isolation Service Extension to interact with decrypted traffic flows.
    - SaaS Tenant Isolation iRule - injects the SaaS Tenant Isolation prompts, as well as optional logging.
+
 
 Download the Installation Script
 --------------------------------------------------------------------------------
