@@ -9,7 +9,7 @@ In order to route outbound traffic through the BIG-IP SSL Orchestrator, you will
 #. From the **Deployment** tab, click on the **Access** dropdown on the  **Ubuntu-Client** resource, and select the **WEBRDP** option.
 
    .. image:: ./images/udf-ubuntu-webrdp-1.png
-      :width: 400
+      :width: 500
       :height: 400
       :align: left   
 
@@ -31,7 +31,7 @@ In order to route outbound traffic through the BIG-IP SSL Orchestrator, you will
 
 #. Confirm the default gateway is set to the BIG-IP SSL Orchestrator. ``10.1.10.7``
 
-   .. image:: ./images/ubuntu-route-2.png
+   .. image:: ./images/ubuntu-route-2-a.png
       :align: left
 
 #. Close the **Terminal** window.
