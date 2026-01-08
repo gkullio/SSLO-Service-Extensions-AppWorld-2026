@@ -30,6 +30,8 @@ Download the Installation Script
 
       cd /tmp
 
+   .. code-block:: text
+
       curl -sk https://raw.githubusercontent.com/f5devcentral/sslo-service-extensions/refs/heads/main/user-coaching/user-coaching-installer.sh -o user-coaching-installer.sh
 
 
