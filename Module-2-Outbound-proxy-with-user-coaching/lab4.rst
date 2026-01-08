@@ -8,7 +8,7 @@ In order to route outbound traffic through the BIG-IP SSL Orchestrator, you will
 
 #. From the **Deployment** tab, click on the **Access** dropdown on the  **Ubuntu-Client** resource, and select the **WEBRDP** option.
 
-   .. image:: ./images/udf-ubuntu-webrdp.png
+   .. image:: ./images/udf-ubuntu-webrdp-1.png
       :align: left   
 
 #. This will open a new tab in your browser.  You will be prompted for username and password for **Apache Guacamole**.  Enter the following credentials:
