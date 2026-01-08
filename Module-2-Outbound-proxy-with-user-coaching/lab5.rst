@@ -22,7 +22,7 @@ Modify Interception Rule
 
 #. Click on the **Edit** (pencil) icon to view the settings.
 
-#. Scroll down to the **Resources > iRules** section and double-click on the **/Common/user-coaching-ja4t-rule** iRule to add it to the **Selected** panel. **Do not move the user-coaching-rule. This rule is already applied to the internal virtual server**
+#. Scroll down to the **Resources > iRules** section and double-click on the **/Common/user-coaching-ja4t-rule** iRule to add it to the **Selected** panel. ``**Do not move the user-coaching-rule. This rule is already applied to the internal virtual server**``
 
 
    .. image:: ./images/user-coaching-3.png
