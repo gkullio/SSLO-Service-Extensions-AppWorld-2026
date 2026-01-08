@@ -5,6 +5,8 @@ You will now enable and test the **tenant isolation** functionality. This will i
 
 We are going to inspect the iRule to get an idea of the various services you can configure, and what we will use for testing the functionality in this lab. 
 
+*For testing purposes, a separate "TESTING" control has also been included, hardcoding a set of headers, and httpbin.org as the trigger URL.*
+
 You will then test before configuring SSLO by going to https://httpbin.org/headers in your **Ubuntu-Client** WEBRDP session. This will show the missing tenant control headers. Then, after modifying the configuration, you will test against that site again to show how the headers are properly inserted.
 
 
