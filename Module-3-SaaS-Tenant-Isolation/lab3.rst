@@ -33,6 +33,30 @@ Click on the **SSL Orchestrator** tab on the left side of the GUI, and then clic
 
 
 
+
+View the reported headers before adding the SaaS Tenant Isolation Service
+--------------------------------------------------------------------------------
+
+#. Return to the **Ubuntu-Client** WEBRDP session.
+
+#. Close the **Firefox** browser window and restart the application.
+
+#. Navigate to the following URL: 
+
+   .. code-block:: text
+
+      https://httpbin.org/headers
+
+
+You should **not** see the X-Test-Header-1 or X-Test-Header-2 headers in the response. You should see something like the following:
+
+   .. image:: images/saas-headers-missing.png
+      :align: left
+
+
+
+
+
 Modify Interception Rule
 --------------------------------------------------------------------------------
 
