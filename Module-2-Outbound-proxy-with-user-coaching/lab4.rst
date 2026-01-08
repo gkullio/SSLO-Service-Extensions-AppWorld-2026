@@ -17,6 +17,8 @@ In order to route outbound traffic through the BIG-IP SSL Orchestrator, you will
    - **Password**: ``user``
 
    .. image:: ./images/guacamole-login.png
+      :width: 300
+      :height: 200
       :align: left
 
 #. Click on the **Terminal** icon at the bottom of the screen to open a new Terminal shell session.
