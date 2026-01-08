@@ -99,7 +99,7 @@ Verify Object Creation
       :align: left
 
 
-#. Navigate to **SSL Orchestrator > Configuration**. In the diagram, you should see the **ssloS_F5_UC** Inspection Service icon (along with the others that you previously deployed).
+#. Navigate to **SSL Orchestrator > Configuration**. In the diagram, you should see the **ssloS_F5_UC** Inspection Service icon.
 
 #. Click on the **Services** tab and verify that the **ssloS_F5_UC** Inspection Service is present.
 
