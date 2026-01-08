@@ -27,9 +27,7 @@ Inspect iRule *saas-tenant-rule*
       :align: left
 
 
-#. Now lets get back to the SSL Orchestrator UI and update the Interception Rule to use this Service Extension. 
-
-Click on the **SSL Orchestrator** tab on the left side of the GUI, and then click **Configuration**.
+#. Now hit the back button on the browser to get out of the iRule view, and lets test the functionality before adding new Service Extension.
 
 
 
@@ -55,6 +53,9 @@ View the reported headers before adding the SaaS Tenant Isolation Service
 
 
 
+#. Lets get back to the SSL Orchestrator UI and update the Interception Rule and Service Chain to use this Service Extension. 
+
+Click on the **SSL Orchestrator** tab on the left side of the GUI, and then click **Configuration**.
 
 
 Modify Interception Rule
