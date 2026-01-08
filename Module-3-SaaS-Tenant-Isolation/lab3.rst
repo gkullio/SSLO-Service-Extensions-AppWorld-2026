@@ -5,25 +5,25 @@ You will now enable and test the **tenant isolation** functionality. This will i
 
 Let's take a look at the iRule to get an idea of the various services you can configure, and what we will use for testing the functionality in this lab. 
 
-Then we will test going to https://httpbin.org/headers to show the missing tenant control headers, and after modifying the configuration, test again to show how they are properly instered.
+You will then test by going to https://httpbin.org/headers in your **Ubuntu-Client** WEBRDP session to show the missing tenant control headers. Then again after modifying the configuration, test to show how the headers are properly inserted.
 
 Inspect iRule *saas-tenant-rule*
 --------------------------------------------------------------------------------
 
-#. Go to you **BIG-IP SSLO** GUI tab and navigate to **Local Traffic > iRules** and click on the **saas-tenant-irule** iRule to view the contents. There are 250 lines to the rule, and most of that is comments to help the user understand the functionality of the iRule.  
+#. Go to your **BIG-IP SSLO** GUI tab and navigate to **Local Traffic > iRules** and click on the **saas-tenant-irule** iRule to view the contents. There are 250 lines to the rule, and most of that is comments to help the user understand the functionality of the iRule.  
 
-    .. note::
+   .. note::
 
       **Do not change anything at this time. This is only to show the extent of the iRule**
 
 #. Please focus on lines 125-135 of the iRule. This is where we will test the proper insertion of headers for this lab. This section sets the static variable and array to define what headers and values are to be inserted.
 
-    .. image:: images/saas-irule-lab-test.png
+   .. image:: images/saas-irule-lab-test.png
       :align: left
 
 #. Now go to lines 241-248. This section executes the action based on the match of the URL. In this case, we are matching against httpbin.org. This is so we can actually see the headers being inserted.
 
-    .. image:: images/saas-irule-action.png
+   .. image:: images/saas-irule-action.png
       :align: left
 
 
@@ -38,17 +38,17 @@ Modify Interception Rule
 
 #. In the **SSL Orchestrator UI**, click on the **Interception Rules** tab.
 
-    .. image:: ./images/saas-interception-rule.png
+   .. image:: ./images/saas-interception-rule.png
       :align: left
 
 
 #. Click on the **sslo_l3_outbound-in-t-4** Interception Rule to view the **Summary** page.
 
-    .. note::
+   .. note::
 
       We are going to use the same interception rule for SaaS Tenant Isolation. All of the Service Extensions we are using in this lab can be stacked on top of a single Interception Rule and L3 Outbound topology.
 
-    .. image:: ./images/user-coaching-2.png
+   .. image:: ./images/user-coaching-2.png
       :align: left
 
 
@@ -56,7 +56,7 @@ Modify Interception Rule
 
 #. Scroll down to the **Resources > iRules** section and double-click on the **/Common/saas-tenant-irule** iRule to add it to the **Selected** panel.
 
-    .. image:: ./images/saas-interception-rule-assign.png
+   .. image:: ./images/saas-interception-rule-assign.png
       :align: left
 
 
@@ -79,14 +79,14 @@ It's time to add the SaaS Isolation Service to the existing Service Chain that w
 
 #. Click on the **Service Chains** tab and click the existing Service Chain **ssloSC_user_coaching**.
 
-    .. image:: ./images/saas-service-chain.png
+   .. image:: ./images/saas-service-chain.png
       :align: left
 
 #. The name field is already filled out as we are amending the existing Service Chain.
 
 #. Double-click on the **ssloS_F5_SaaS-Tenant-Isolation** Service to add to the Selected Service Chain Order.
 
-    .. image:: ./images/saas-service-chain-add.png
+   .. image:: ./images/saas-service-chain-add.png
       :align: left
 
 #. Click **Deploy** and then **OK** to acknowledge the warning.  Click **OK** again after the deployment has completed.
