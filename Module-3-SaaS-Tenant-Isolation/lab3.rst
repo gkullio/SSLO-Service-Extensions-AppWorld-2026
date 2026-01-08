@@ -48,7 +48,7 @@ View the reported headers before adding the SaaS Tenant Isolation Service
       https://httpbin.org/headers
 
 
-* You should **not** see the X-Test-Header-1 or X-Test-Header-2 headers in the response. You should see something like the following:
+#. You should **not** see the X-Test-Header-1 or X-Test-Header-2 headers in the response. You will see something similar the following:
 
    .. image:: images/saas-headers-missing.png
       :align: left
