@@ -89,13 +89,13 @@ Verify Object Creation
    - **user-coaching-ja4t-rule**
    - **user-coaching-rule**
 
-   .. image:: images/uc-install-verify-1.png
+   .. image:: images/uc-install-verify-1-a.png
       :align: left
 
 
 #. Click on the **iFile List** tab and verify that the **user-coaching-html** and **user-blocking-html** iFiles are present.
 
-   .. image:: images/uc-install-verify-2.png
+   .. image:: images/uc-install-verify-2-a.png
       :align: left
 
 
