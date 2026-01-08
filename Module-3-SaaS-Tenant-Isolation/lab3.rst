@@ -3,9 +3,11 @@ Implement SaaS Tenant Isolation
 
 You will now enable and test the **tenant isolation** functionality. This will insert headers into the HTTP request to identify the tenants which would be allowed for the SaaS application. This can be setup for users to only use a specific tenant(s) to prevent users from copying data between tenants.
 
-Let's take a look at the iRule to get an idea of the various services you can configure, and what we will use for testing the functionality in this lab. 
+We are going to inspect the iRule to get an idea of the various services you can configure, and what we will use for testing the functionality in this lab. 
 
-You will then test by going to https://httpbin.org/headers in your **Ubuntu-Client** WEBRDP session to show the missing tenant control headers. Then again after modifying the configuration, test to show how the headers are properly inserted.
+You will then test before configuring SSLO by going to https://httpbin.org/headers in your **Ubuntu-Client** WEBRDP session. This will show the missing tenant control headers. Then, after modifying the configuration, you will test against that site again to show how the headers are properly inserted.
+
+
 
 Inspect iRule *saas-tenant-rule*
 --------------------------------------------------------------------------------
@@ -118,7 +120,27 @@ It's time to add the SaaS Isolation Service to the existing Service Chain that w
 
 
 
+Test SaaS Tenant Isolation
+--------------------------------------------------------------------------------
 
+#. Return to the **Ubuntu-Client** WEBRDP session.
+
+#. Close the **Firefox** browser window and restart the application.
+
+#. Navigate to the following URL: 
+
+   .. code-block:: text
+
+      https://httpbin.org/headers
+
+
+#. Now you will see both the X-Test-Header-1 or X-Test-Header-2 headers in the response. 
+
+   .. image:: images/saas-headers-inserted.png
+      :align: left
+
+
+This completes the installation and configuration of the **SaaS Tenant Isolation Service Extension**.
 
 
 
