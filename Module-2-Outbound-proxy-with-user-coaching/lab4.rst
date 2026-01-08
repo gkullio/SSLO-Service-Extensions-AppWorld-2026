@@ -29,7 +29,7 @@ In order to route outbound traffic through the BIG-IP SSL Orchestrator, you will
       :align: left
 
 
-#. Confirm the default gateway is set to the BIG-IP SSL Orchestrator. ``10.1.10.7``
+#. Confirm the default gateway is set to the BIG-IP SSL Orchestrator. Use the ``ip route`` command to display the routing table.  The default gateway should be ``10.1.10.7``
 
    .. image:: ./images/ubuntu-route-2-a.png
       :align: left
