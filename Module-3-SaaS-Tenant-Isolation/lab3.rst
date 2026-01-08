@@ -5,7 +5,7 @@ You will now enable and test the **tenant isolation** functionality. This will i
 
 Let's take a look at the iRule to get an idea of the various services you can configure, and what we will use for testing the functionality in this lab. 
 
-
+Then we will test going to https://httpbin.org/headers to show the missing tenant control headers, and after modifying the configuration, test again to show how they are properly instered.
 
 Inspect iRule *saas-tenant-rule*
 --------------------------------------------------------------------------------
