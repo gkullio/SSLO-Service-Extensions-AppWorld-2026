@@ -20,11 +20,16 @@ Download the Installation Script
       :align: left
 
 
-#. Download the installation script:
+#. Change Directory to the /tmp directory:
 
    .. code-block:: text
 
       cd /tmp
+
+
+#. Download the installation script:      
+
+   .. code-block:: text
 
       curl -sk https://raw.githubusercontent.com/f5devcentral/sslo-service-extensions/refs/heads/main/saas-tenant-isolation/saas-tenant-isolation-installer.sh -o saas-tenant-isolation-installer.sh
 

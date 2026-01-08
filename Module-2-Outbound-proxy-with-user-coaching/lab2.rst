@@ -24,11 +24,14 @@ Download the Installation Script
       :align: left
 
 
-#. Download the installation script:
+#. Change Directory to the /tmp directory:
 
    .. code-block:: text
 
       cd /tmp
+
+
+#. Download the installation script:      
 
    .. code-block:: text
 
