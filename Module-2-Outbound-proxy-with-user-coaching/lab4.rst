@@ -4,9 +4,20 @@ Verify Outbound Topology Functionality
 Route Client Traffic via BIG-IP SSL Orchestrator
 --------------------------------------------------------------------------------
 
-In order to route outbound traffic through the BIG-IP SSL Orchestrator, you will need to change the default gateway on the **Ubuntu-Client** machine.
+In order to route outbound traffic through the BIG-IP SSL Orchestrator, you will need to confirm the default gateway on the **Ubuntu-Client** machine.
 
-#. Return to the **Ubuntu-Client** RDP tab (originally launched from the **Ubuntu-Server > WEBRDP** link).
+#. From the **Deployment** tab, click on the **Access** dropdown on the  **Ubuntu-Client** resource, and select the **WEBRDP** option.
+
+   .. image:: ./images/udf-ubuntu-webrdp.png
+      :align: left   
+
+#. This will open a new tab in your browser.  You will be prompted for username and password for **Apache Guacamole**.  Enter the following credentials:
+
+   - **Username**: ``user``
+   - **Password**: ``user``
+
+   .. image:: ./images/guacamole-login.png
+      :align: left
 
 #. Click on the **Terminal** icon at the bottom of the screen to open a new Terminal shell session.
 
@@ -14,11 +25,7 @@ In order to route outbound traffic through the BIG-IP SSL Orchestrator, you will
       :align: left
 
 
-#. Enter ``sudo ip route change default via 10.1.10.7`` to change the default route.
-
-#. When prompted, enter ``agility`` as the password.
-
-#. Enter ``ip route`` to verify that the default route has changed.
+#. Confirm the default gateway is set to the BIG-IP SSL Orchestrator. ``10.1.10.7``
 
    .. image:: ./images/ubuntu-route-2.png
       :align: left
