@@ -71,7 +71,7 @@ Run the Installation Script
 Verify Object Creation
 --------------------------------------------------------------------------------
 
-#. From the UDF **Deployment** tab, access the TMUI of the **BIG-IP SSLO** resource. This will open a new browser tab with an SSH session.  As before, login with admin / admin.
+#. From the UDF **Deployment** tab, access the TMUI of the **BIG-IP SSLO** resource. This will open a new browser tab with an SSH session.  As before, login with **admin** / **admin**.
 
     .. image:: images/udf-sslo-tmui.png
       :align: left
