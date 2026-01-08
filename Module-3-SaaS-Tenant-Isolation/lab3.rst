@@ -7,7 +7,7 @@ Let's take a look at the iRule to get an idea of the various services you can co
 
 
 
-Inspect iRule **saas-tenant-rule**
+Inspect iRule ``saas-tenant-rule``
 --------------------------------------------------------------------------------
 
 
