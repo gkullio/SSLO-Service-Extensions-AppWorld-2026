@@ -81,7 +81,7 @@ Verify Object Creation
 
 #. Navigate to **Local Traffic > iRules** and verify that the following iRules are present.
 
-   - saas-tenant-irule
+   - **saas-tenant-irule**
 
    .. image:: images/udf-irule-verify.png
       :align: left

@@ -86,8 +86,8 @@ Verify Object Creation
 
 #. Navigate to **Local Traffic > iRules** and verify that the following iRules are present.
 
-   - user-coaching-ja4t-rule
-   - user-coaching-rule
+   - **user-coaching-ja4t-rule**
+   - *user-coaching-rule*
 
    .. image:: images/uc-install-verify-1.png
       :align: left
