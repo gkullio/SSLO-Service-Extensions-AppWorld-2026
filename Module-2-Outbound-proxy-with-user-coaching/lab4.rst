@@ -41,7 +41,7 @@ In order to route outbound traffic through the BIG-IP SSL Orchestrator, you will
 Test Internet Access
 --------------------------------------------------------------------------------
 
-#. Close the **Firefox** browser window and restart the application.
+#. If open, please close the **Firefox** browser and restart the application.
 
 #. Navigate to https://www.f5.com.
 
