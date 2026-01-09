@@ -15,7 +15,7 @@ SaaS Tenant Isolation Script
 Download the Installation Script
 --------------------------------------------------------------------------------
 
-#. From the UDF **Deployment** tab, access the Web Shell of the **BIG-IP SSL Orchestrator** resource. This will open a new browser tab with an SSH session (logged in as the **root** user).
+#. From the UDF **Deployment** tab, access the Web Shell of the **BIG-IP SSLO** resource. This will open a new browser tab with an SSH session (logged in as the **root** user).
 
    .. image:: images/udf-sslo-webshell-1.png
       :align: left
