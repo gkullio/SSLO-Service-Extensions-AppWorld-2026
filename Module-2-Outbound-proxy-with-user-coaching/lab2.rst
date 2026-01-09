@@ -8,10 +8,11 @@ User Coaching Script
 
 - The script creates the following objects:
    - F5_UC Inspection Service - the user coaching Service Extension to interact with decrypted traffic flows.
+   - Internal Virtual Service to act as the target for the User Coaching Service.
    - User coaching iRule - injects the user blocking and coaching prompts, as well as optional logging.
    - TLS fingerprinting iRule - determines if a user has already completed the user coaching flow.
    - user-coaching-html iFile - contains the user coaching HTML template.
-   - user-blocking-html iFile - contains the user blocking HTML template
+   - user-blocking-html iFile - contains the user blocking HTML template.
 
 
 Download the Installation Script

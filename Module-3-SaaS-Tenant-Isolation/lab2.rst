@@ -8,6 +8,7 @@ SaaS Tenant Isolation Script
 
 - The script creates the following objects:
    - F5_SaaS-Tenant-Isolation Inspection Service - the SaaS Tenant Isolation Service Extension to interact with decrypted traffic flows.
+   - Internal Virtual Server to act as the target for the SaaS Tenant Isolation Inspection Service.
    - SaaS Tenant Isolation iRule - injects the SaaS Tenant Isolation prompts, as well as optional logging.
 
 
