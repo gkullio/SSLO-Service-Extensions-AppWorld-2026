@@ -97,4 +97,4 @@ Verify Object Creation
 
 
 
-This completes the installation of the configuration objects needed to support the **SaaS Tenant Isolation** function. In a later step, you will add the resulting **ssloS_F5_SaaS-Tenant-Isolation** inspection Service to a decrypted traffic Service Chain and add the **saas-tenant-irule** iRule to the existing L3 Outbound Topology's Interception Rule.
+This completes the installation of the configuration objects needed to support the **SaaS Tenant Isolation** Service Extension. In a later step, you will add the resulting **ssloS_F5_SaaS-Tenant-Isolation** Service to the existing Service Chain.

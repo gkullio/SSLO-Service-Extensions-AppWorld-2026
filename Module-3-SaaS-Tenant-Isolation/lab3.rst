@@ -62,45 +62,6 @@ View the reported headers before adding the SaaS Tenant Isolation Service
 Click on the **SSL Orchestrator** tab on the left side of the GUI, and then click **Configuration**.
 
 
-Modify Interception Rule
---------------------------------------------------------------------------------
-
-#. In the **SSL Orchestrator UI**, click on the **Interception Rules** tab.
-
-   .. image:: ./images/saas-interception-rule.png
-      :align: left
-
-
-#. Click on the **sslo_l3_outbound-in-t-4** Interception Rule to view the **Summary** page.
-
-   .. note::
-
-      We are going to use the same interception rule for SaaS Tenant Isolation. All of the Service Extensions we are using in this lab can be stacked on top of a single Interception Rule and L3 Outbound topology.
-
-   .. image:: ./images/user-coaching-2.png
-      :align: left
-
-
-#. Click on the **Edit** (pencil) icon to view the settings.
-
-#. Scroll down to the **Resources > iRules** section and double-click on the **/Common/saas-tenant-irule** iRule to add it to the **Selected** panel.
-
-   .. image:: ./images/saas-interception-rule-assign.png
-      :align: left
-
-
-#. Click on the **Save & Next** button to return to the **Summary** page.
-
-   .. image:: ./images/user-coaching-4.png
-      :align: left
-
-
-#. Click on the **Deploy** button.
-
-#. When the deployment has completed, click on the **OK** button to close the dialog box and return to the **Topologies** list.
-
-
-
 Add SaaS Tenant Isolation to the existing *User Coaching* Service Chain
 --------------------------------------------------------------------------------
 

@@ -70,3 +70,28 @@ Run the Installation Script
 
 Verify Object Creation
 ----------------------
+
+#. From the UDF **Deployment** tab, access the TMUI of the **BIG-IP SSLO** resource. This will open a new browser tab with a GUI session.  As before, login with **admin** / **admin**.
+
+   .. image:: images/udf-sslo-tmui.png
+      :align: left
+
+
+#. Navigate to **Local Traffic > iRules** and verify that the following iRules are present.
+
+   - **doh-guardian-rule**
+
+   .. image:: images/udf-doh-guardian-irule.png
+      :align: left
+
+#. Navigate to **SSL Orchestrator > Configuration**. In the diagram, you should see the **ssloS_F5_DoH** Inspection Service icon (along with the other Services you previously deployed). 
+
+#. Click on the **Services** tab and verify that the **ssloS_F5_DoH** Inspection Service is present.
+
+   .. image:: images/udf-doh-guardian-install-verify.png
+      :align: left
+
+
+
+This completes the installation of the configuration objects needed to support the **DoH Guardian** Service Extension. In a later step, you will add the **ssloS_F5_DoH** Service to the existing Service Chain.  
+
