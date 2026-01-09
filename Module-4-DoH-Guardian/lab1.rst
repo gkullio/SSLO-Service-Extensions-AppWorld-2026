@@ -1,0 +1,13 @@
+Using Advanced Blocking Pages
+=============================
+|
+
+Challenge
+---------
+Your company is adopting DNS-over-HTTPS (*DoH*) to protect users against DNS eavesdropping and tampering. At the same time, DoH blinds traditional network security tools and can let apps bypass enterprise DNS policies. The CISO has asked you to design a solution that restores visibility and control without disrupting users.
+
+|
+
+Solution
+--------
+The **F5 SSL Orchestrator Service Extension** **DoH Guardian** is a function for monitoring/managing DNS-over-HTTPS traffic flows and detecting potentially malicious DoH exfiltration over a L3 Outbound Proxy. This **Service Extension** is invoked at a detected (and *decrypted*) DNS-over-HTTPS request and has several options for logging, management, and anomaly detection. 

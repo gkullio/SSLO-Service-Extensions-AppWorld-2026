@@ -1,8 +1,9 @@
 User Coaching Scenario
-================================================================================
+======================
+|
 
 Challenge
---------------------------------------------------------------------------------
+---------
 
 Your CISO is concerned about the increasing use of public generative AI applications by employees because of the 
 risk of exposing confidential or proprietary company data. You are challenged with finding a solution to reduce this risk
@@ -12,7 +13,7 @@ acceptance before being allowed access to the web site.
 |
 
 Solution
---------------------------------------------------------------------------------
+--------
 
 The functionality of SSL Orchestrator can be extended using a mechanism called **Service Extensions**. This capability allows user-defined code to implement application logic and manipulate decrypted traffic flows.
 
