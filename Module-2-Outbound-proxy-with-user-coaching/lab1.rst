@@ -1,5 +1,6 @@
 User Coaching Scenario
 ======================
+
 |
 
 Challenge
