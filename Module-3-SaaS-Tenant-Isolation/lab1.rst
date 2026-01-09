@@ -12,7 +12,7 @@ Solution
 --------------------------------------------------------------------------------
 
 
-The **SSLO Service Extension** for **tenant isolation** can help meet this challenge. When a user attempts to connect to a SaaS Application, the **tenant isolation** inspection would be applied to the traffic flow. This action would be based on header inspection, removal, and injection that can be set for specific SaaS applications to allow access only to approved tenants within.  
+The **SSLO Service Extension** for **SaaS Tenant Isolation** can help meet this challenge. When a user attempts to connect to a SaaS Application, the **tenant isolation** inspection would be applied to the traffic flow. This action would be based on header inspection, removal, and injection that can be set for specific SaaS applications to allow access only to approved tenants within.  
 
 Examples of SaaS applications that can be restricted by tenant isolation:
 
