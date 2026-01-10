@@ -103,4 +103,4 @@ Test SaaS Tenant Isolation
       :align: left
 
 
-This completes the installation and configuration of the **SaaS Tenant Isolation Service Extension**.
+This completes the installation, configuration and testing of the **SaaS Tenant Isolation Service Extension**.
