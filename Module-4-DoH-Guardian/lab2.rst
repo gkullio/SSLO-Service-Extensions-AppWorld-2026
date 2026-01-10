@@ -86,10 +86,10 @@ Verify Object Creation
 
 #. Navigate to **SSL Orchestrator > Configuration**. In the diagram, you should see the **ssloS_F5_DoH** Inspection Service icon (along with the other Services you previously deployed). 
 
-#. Click on the **Services** tab and verify that the **ssloS_F5_DoH** Inspection Service is present.
+#. Click on the **Services** tab and verify that the **ssloS_F5_DoH** Inspection Service is present and shows no errors.
 
    .. image:: images/udf-doh-guardian-install-verify.png
-      :align: left
+      :align: left 
 
 
 
