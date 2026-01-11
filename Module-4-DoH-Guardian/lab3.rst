@@ -21,7 +21,9 @@ Inspect the DoH Guardian iRule *doh-guardian-irule*
 
       **Please do not change anything at this time.** Take this time to review the notes and comments in each section to understand the functionality of the iRule.
 
-#. 
+#. Look at lines 40 - 44, and 54 - 58. These are the sections that control *blackhole* and *sinkhole* mode.
+
+
 
 Add the DoH Guardian Service to the existing Service Chain
 ----------------------------------------------------------
@@ -35,8 +37,8 @@ Configure the Firefox browser in the Ubuntu-Client to use Google's DoH server
 
 #. Entry 1
 
-Test the DoH Guardian Service Extension functionality
------------------------------------------------------
+Test the DoH Guardian Service Extension *blackhole* functionality
+-------------------------------------------------------------------------
 
 |
 
