@@ -23,3 +23,48 @@ The SSL Orchestrator solution requires two configurations:
 
 Testing
 -------
+
+Modify existing L3 Outbound Proxy topology
+------------------------------------------
+
+#. Modify interception rule
+
+#. To create the SSL Orchestrator sinkhole listener topology. Any section not mentioned below can be skipped:
+
+Topology Properties
+
+Protocol: TCP
+SSL Orchestrator Topologies: select L3 Outbound
+SSL Configuration
+
+Click on "Show Advanced Setting"
+CA Certificate Key Chain: select the correct client-trusted internal signing CA certificate and key
+Expire Certificate Response: Mask
+Untrusted Certificate Response: Mask
+
+|
+
+Security Policy
+
+|
+
+Delete the Pinners_Rule
+
+|
+
+Interception Rule
+
+|
+
+Destination Address/Mask: 
+   - enter the client-facing IP address/mask. This will be the address sent to clients from the DNS for the sinkhole. (ex. 10.1.10.160%0/32)
+   - Ingress Network/VLANs: select the client-facing VLAN
+   - Protocol Settings/SSL Configurations: ensure the previously-created SSL configuration is selected
+
+
+Ignore all other settings and Deploy. Once deployed, navigate to the Interception Rules tab and edit the new sinkhole topology interception rule.
+
+Resources/iRules: 
+   - add the sinkhole-target-rule iRule
+   - Ignore all other settings and Deploy.
+
