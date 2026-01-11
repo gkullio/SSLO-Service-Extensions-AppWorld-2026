@@ -11,3 +11,6 @@ Your company is adopting DNS-over-HTTPS (*DoH*) to protect users against DNS eav
 Solution
 --------
 The **F5 SSL Orchestrator Service Extension** **DoH Guardian** is a function for monitoring/managing DNS-over-HTTPS traffic flows and detecting potentially malicious DoH exfiltration over a L3 Outbound Proxy. This **Service Extension** is invoked at a detected (and *decrypted*) DNS-over-HTTPS request and has several options for logging, management, and anomaly detection. 
+
+You will be enabling the capability to inspecting DoH requests and applying controls to block (blackhole or sinkhole) or allow based on the DoH request URL category.
+
