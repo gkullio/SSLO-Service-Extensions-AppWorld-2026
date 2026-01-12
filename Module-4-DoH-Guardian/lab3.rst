@@ -21,7 +21,13 @@ Inspect the DoH Guardian iRule *doh-guardian-irule*
 
       **Please do not change anything at this time.** Take this time to review the notes and comments in each section to understand the functionality of the iRule.
 
-#. Look at lines 40 - 44, and 54 - 58. These are the sections that control *blackhole* and *sinkhole* mode.
+#. Look at lines 40 - 44, and 54 - 58. These are the sections that control *blackhole* and *sinkhole* mode.  For this portion of the lab, we will use the *blackhole* feature.  We will use the *sinkhole* feature in the next lab.
+
+   .. image:: images/doh-blackhole-irule.png
+      :align: left
+
+   .. image:: images/doh-sinkhole-irule.png
+      :align: left
 
 
 
