@@ -35,6 +35,7 @@ Contributors
 This lab and related content wouldn't exist without the dedication of the following individuals:
 
 - Jason Chiu
+- Gage Kulland
 - Kevin Stewart
 - Countless lab testers
 
@@ -49,8 +50,8 @@ Revision History
    * - **Version**
      - **Contributors**
      - **Changes**
-   * - 1.0 (AppWorld 2025)
-     - Jason Chiu, Kevin Stewart
+   * - 1.0 (AppWorld 2026)
+     - Jason Chiu, Gage Kulland, Kevin Stewart
      - Lab created
 
 
