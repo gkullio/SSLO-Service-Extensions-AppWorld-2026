@@ -20,10 +20,10 @@ Note that the lab environment will also shut down automatically at the end of th
 Links to the github repositories used in the lab
 ================================================
 
+These repositories contain all the features and automation used in this lab.
+````````````````````````````````````````````````````````````````````````````
  - `SSLO Service Extensions <https://github.com/f5devcentral/sslo-service-extensions>`_
  - `SSLO API Reference for Automation <https://github.com/f5devcentral/sslo-api-reference>`_
-
-Huge thanks to Kevin Stewart and the F5 DevCentral community for your support and feedback
 
 Explore More SSL Orchestrator Labs
 ================================================================================
@@ -39,8 +39,8 @@ Contributors
 
 This lab and related content wouldn't exist without the dedication of the following individuals:
 
-- Jason Chiu
 - Gage Kulland
+- Jason Chiu
 - Kevin Stewart
 - Countless lab testers
 
@@ -49,14 +49,14 @@ Revision History
 ================================================================================
 
 .. list-table::
-   :header-rows: 0
+   :header-rows: 1
    :widths: auto
 
    * - **Version**
      - **Contributors**
      - **Changes**
    * - 1.0 (AppWorld 2026)
-     - Jason Chiu, Gage Kulland, Kevin Stewart
+     - Gage Kulland, Jason Chiu, Kevin Stewart
      - Lab created
 
 
