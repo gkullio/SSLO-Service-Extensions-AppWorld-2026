@@ -35,6 +35,8 @@ Inspect the DoH Guardian iRule *doh-guardian-irule*
 
 **The doh-guardian-rule iRule has a number of editable settings**:
 
+``````````````````````````````````````````````````````````````````
+
 DOH_LOG_LOCAL:
    * Enables or disables local (/var/log/ltm) logging of DoH requests and events. (1=on, 0=off)
 DOH_LOG_HSL:
