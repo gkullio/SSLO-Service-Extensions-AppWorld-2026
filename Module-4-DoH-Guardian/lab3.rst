@@ -34,7 +34,6 @@ Inspect the DoH Guardian iRule *doh-guardian-irule*
 #. As you can probably notice, this is a quite complex iRule. However, it was designed in a way to be easy to modify and change the behavior.  Each section of the iRule is commented to explain the functionality of the code.
 
 **The doh-guardian-rule iRule has a number of editable settings**:
-
 ``````````````````````````````````````````````````````````````````
 
 DOH_LOG_LOCAL:
