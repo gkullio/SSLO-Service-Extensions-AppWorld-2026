@@ -5,13 +5,13 @@ SSLO Service Extensions: Plug, Play, Automate (AppWorld 2026 | 2 hours)
 
 .. note::
 
-   This lab relies on UDF Blueprint: **AppWorld 2026 - SSL Orchestrator - Service Extensions**
+   This lab relies on UDF Blueprint: **AppWorld 2026 - SSL Orchestrator 201**
 
    Developed and tested with **BIG-IP 21.0.0 / SSL Orchestrator 13.0.5**.
 
 |
 
-SSL Orchestrator was built to protect your organization from encrypted inbound and outbound threats. Now, let's dive into some additional customizations to bolster your security posture for outbound traffic and .
+SSL Orchestrator was built to protect your organization from encrypted inbound and outbound threats. Now, let's dive into some additional customizations to bolster your security posture for outbound traffic.
 
 |
 
@@ -27,8 +27,7 @@ Expected time to complete: **90 minutes** (excluding lab instructor presentation
 
 Pre-requisite: Basic familiarity with SSL Orchestrator is recommended, but not required.
 
-There are additional labs if you want to explore other Service Extensions.  
-They are located in the *additional* section.
+There are additional labs if you want to explore other Service Extensions. They are located in the *additional* section if you have time after completing the other modules in this class.  They build upon the existing **L3 Outbound** Topology.
 
 |
 
