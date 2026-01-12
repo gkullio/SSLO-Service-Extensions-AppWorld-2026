@@ -30,6 +30,41 @@ Inspect the DoH Guardian iRule *doh-guardian-irule*
       :align: left
 
 
+#. As you can probably notice, this is a quite complex iRule. However, it was designed in a way to be easy to modify and change the behavior.  Each section of the iRule is commented to explain the functionality of the code.
+
+To customize functionality
+The doh-guardian-rule iRule has a number of editable settings:
+
+DOH_LOG_LOCAL:
+Enables or disables local (/var/log/ltm) logging of DoH requests and events. (1=on, 0=off)
+DOH_LOG_HSL:
+Defines a high-speed logging pool to send logs to external SIEM. (pool name)
+DOH_CATEGORY_TYPE:
+Defines the category database to use, subscription, custom, or both. (string selection)
+DOH_BLOCKING_BASIC:
+Enables or disables basic DoH blocking. This option is mutually exclusive and simply blocks all detected DoH requests. (1=on, 0=off)
+DOH_BLACKHOLE_BY_CATEGORY:
+Defines the list of categories that will trigger a DoH blackhole action. (category list)
+DOH_BLACKHOLE_BY_CATEGORY_ACTION:
+Allows for the default blackhole action, or a dryrun (logging) action. (string selection)
+DOH_SINKHOLE_BY_CATEGORY:
+Defines the list of categories that will trigger a DoH sinkhole action. (category list)
+DOH_SINKHOLE_BY_CATEGORY_ACTION:
+Allows for the default sinkhole action, or a dryrun (logging) action. (string selection)
+DOH_SINKHOLE_IP4:
+Defines the IP4v address that will be used for the sinkhole action on A requests. (ipv4 address)
+DOH_SINKHOLE_IP6:
+Defines the IP4v address that will be used for the sinkhole action on AAAA requests. (ipv6 address)
+DOH_ANOMALY_DETECTION:
+Enables or disables anomaly detection. (1=on, 0=off)
+DOH_ANOMALY_CONDITION_LONG_DOMAIN:
+Defines the long subdomain anomaly detection, by virtue of a max character length setting (integer, default=52 characters).
+DOH_ANOMALY_CONDITION_LONG_DOMAIN_ACTION:
+Defines the action to be taken on the long subdomain anomaly: dryrun, drop, blackhole, or sinkhole. (string selection)
+DOH_ANOMALY_CONDITION_UNCOMMON_TYPE:
+Defines the uncommon query type anomaly detection, by virtue of a list of uncommon types. (DNS record type list)
+DOH_ANOMALY_CONDITION_UNCOMMON_TYPE_ACTION:
+Defines the action to be take on the uncommon type anomaly: dryrun, drop, blackhole, or sinkhole. (string selection)
 
 Add the DoH Guardian Service to the existing Service Chain
 ----------------------------------------------------------
