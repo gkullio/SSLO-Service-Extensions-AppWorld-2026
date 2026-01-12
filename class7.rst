@@ -27,6 +27,9 @@ Expected time to complete: **90 minutes** (excluding lab instructor presentation
 
 Pre-requisite: Basic familiarity with SSL Orchestrator is recommended, but not required.
 
+There are additional labs if you want to explore other Service Extensions.  
+They are located in the *additional* section.
+
 |
 
 .. toctree::
@@ -38,3 +41,4 @@ Pre-requisite: Basic familiarity with SSL Orchestrator is recommended, but not r
    module*/module*
    conclusion.rst
    appendix/appendices.rst
+   additional_labs/module*

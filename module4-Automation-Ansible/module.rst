@@ -10,4 +10,4 @@ In this module, we will explore the ability to automate specific functions of th
    :maxdepth: 1
    :glob:
 
-   lab*. 
+   lab*
