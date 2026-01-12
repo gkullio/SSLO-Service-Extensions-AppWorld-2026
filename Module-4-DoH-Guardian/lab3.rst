@@ -2,9 +2,6 @@
 Implement DoH Guardian
 ======================
 
-Implement DoH Guardian
-======================
-
 We have confirmed the DoH Guardian configuration objects were successfully added to BIG-IP SSLO.  We now configure the existing **L3 Outbound Proxy** to use the new service.  
 
 During this lab, we will perform the following actions:
