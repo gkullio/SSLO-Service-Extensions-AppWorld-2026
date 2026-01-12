@@ -17,15 +17,22 @@ Note that the lab environment will also shut down automatically at the end of th
 
 |
 
+Links to the github repositories used in the lab
+================================================
+
+`SSLO Service Extensions <https://github.com/f5devcentral/sslo-service-extensions>`_
+`SSLO API Reference for Automation <https://github.com/f5devcentral/sslo-api-reference`_
+
+Huge thanks to Kevin Stewart and the F5 DevCentral community for your support and feedback
+
 Explore More SSL Orchestrator Labs
 ================================================================================
 
 To learn more about SSL Orchestrator, consider attending one of the other labs in this series:
 
-- `SSLO 101: Essential SSL Visibility with SSL Orchestrator <../class1/class1.html>`_
-- `SSLO 102: SSL Orchestrator on BIG-IP Next <../class5/class5.html>`_
-- `SSLO 201: Advanced Use Cases with SSL Orchestrator <../class2/class2.html>`_
-- `SSLO 301: Automating SSL Orchestrator Deployments in Public Cloud <../class3/class3.html>`_
+- `Essential SSL Visibility with SSL Orchestrator <https://github.com/f5devcentral/f5-agility-labs-sslviz/blob/develop/docs/class1/class1.rst>`_
+- `Advanced Use Cases with SSL Orchestrator <https://github.com/f5devcentral/f5-agility-labs-sslviz/blob/develop/docs/class2/class2.rst>`_
+
 
 |
 
