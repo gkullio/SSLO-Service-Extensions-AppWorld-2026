@@ -19,9 +19,9 @@ Inspect the DoH Guardian iRule *doh-guardian-irule*
 
    .. note::
 
-      **Please do not change anything at this time.** Take this time to review the notes and comments in each section to understand the functionality of the iRule.
+      **Please do not modify the iRule at this time.** Review the notes and comments in each section to understand the functionality of the iRule. 
 
-#. Look at lines 40 - 44, and 54 - 58. These are the sections that control *blackhole* and *sinkhole* mode.  For this portion of the lab, we will use the *blackhole* feature.  We will use the *sinkhole* feature in the next lab.
+#. Look at lines 40 - 44, and 54 - 58. These are the sections that control *blackhole* and *sinkhole* mode.  For this portion of the lab, we will use the *blackhole* feature.  We will use the other feature in the next lab.
 
    .. image:: images/doh-blackhole-irule.png
       :align: left
@@ -34,21 +34,73 @@ Inspect the DoH Guardian iRule *doh-guardian-irule*
 Add the DoH Guardian Service to the existing Service Chain
 ----------------------------------------------------------
 
-|
+Now that we have confirmed the DoH Guardian configuration objects were successfully added to BIG-IP SSLO, we will add the DoH Guardian Service to the existing Service Chain.  
+
+#. Go to the **BIG-IP SSLO** GUI tab in your web browser and navigate to **SSL Orchestrator > Configuration**. 
+
+#. Click on **Service Chains** and then click on the **ssloSC_user_coaching** Service Chain.  
+
+   .. image:: images/doh-service-chain-add.png
+      :align: left
+
+#. Double click the **ssloS_F5_DoH** in the Services Available list to add it to the Selected Service Chain Order.
+
+   .. image:: images/doh-service-chain-add-1.png
+      :align: left
+
+#. Click **Deploy** then **OK** (possibly twice) to confirm the changes.  
 
 Configure the Firefox browser in the Ubuntu-Client to use Google's DoH server
 -------------------------------------------------------------------------------
 
-|
+#. Go to the **Ubuntu-Client** GUI tab in your web browser and open up the **Firefox Browser**.
 
-#. Entry 1
+#. In the Firefox Browser, click on the **Settings** icon (three horizontal lines) and then click on **Settings**.
+
+#. In the **Find in Settings** search box, type **DoH**, and it will display the following:
+
+   .. image:: images/doh-firefox-configure.png
+      :align: left
+
+#. In order to force all browsing to use DNS-over-HTTPS, click the **Increased Protection** radial button. 
+
+#. In the *Choose provider* text box, type the following:
+
+   .. code-block:: text
+
+      https://dns.google/dns-query
+
+#. After inputting the Google DNS provider, you should see the Status change to **Active** and the Provider Name change to **dns.google**.
+
+   .. image:: images/doh-firefox-configure-2.png
+      :align: left
+
+#. After configuring you can close and reopen **Firefox**.
+
+|
 
 Test the DoH Guardian Service Extension *blackhole* functionality
 -------------------------------------------------------------------------
 
-|
+#. So far, we have inspected the **doh-guardian-irule**,  added the **ssloS_F5_DoH** Service to the existing **Service Chain**, and setup **Firefox** to use Google's DoH server for all DNS queries.
 
-#. Entry 1
+Logging is setup automatically in this lab to log all DNS-over-HTTPS requests to the local log file (/var/log/ltm). 
+
+Go back to your **BIG-IP SSLO** in your UDF Environment and open the **Web Shell**.  From there you can view the running logs with the following command:  
+
+   .. code-block:: text
+
+      tail -f /var/log/ltm
+
+   .. note::
+
+      You should see a few entries in the logs since we closed and reopened **Firefox**.
+
+   .. image:: images/doh-logging.png
+      :align: left
+
+
+
 
 Enable the *blackhole* mode on the DoH Guardian iRule to block any DoH requests that are categorized as *Sports*
 ---------------------------------------------------------------------------------------------------------------- 
