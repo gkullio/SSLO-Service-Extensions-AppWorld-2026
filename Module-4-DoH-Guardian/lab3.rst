@@ -64,7 +64,9 @@ Configure the Firefox browser in the Ubuntu-Client to use Google's DoH server
 
 #. In order to force all browsing to use DNS-over-HTTPS, click the **Increased Protection** radial button. 
 
-#. In the *Choose provider* text box, type the following:
+#. In the **Choose provider** text box, type the following:
+
+|
 
    .. code-block:: text
 
@@ -86,7 +88,7 @@ So far, we have inspected the **doh-guardian-irule**,  added the **ssloS_F5_DoH*
 
 Logging is setup automatically in this lab to log all DNS-over-HTTPS requests to the local log file (/var/log/ltm). 
 
-Go back to your **BIG-IP SSLO** in your UDF Environment and open the **Web Shell**.  From there you can view the running logs with the following command:  
+#. Go back to your **BIG-IP SSLO** in your UDF Environment and open the **Web Shell**.  From there you can view the running logs with the following command:  
 
    .. code-block:: text
 
