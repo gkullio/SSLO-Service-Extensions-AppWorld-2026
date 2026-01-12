@@ -20,7 +20,7 @@ Note that the lab environment will also shut down automatically at the end of th
 Links to the github repositories used in the lab
 ================================================
 
-These repositories contain all the features and automation used in this lab:
+These repositories are hosted on the F5 DevCentral GitHub and contain all the features and automation used in this lab:
 
 - `SSLO Service Extensions <https://github.com/f5devcentral/sslo-service-extensions>`_
 - `SSLO API Reference for Automation <https://github.com/f5devcentral/sslo-api-reference>`_
