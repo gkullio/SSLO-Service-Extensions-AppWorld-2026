@@ -120,7 +120,7 @@ Configure the Firefox browser in the Ubuntu-Client to use Google's DoH server
 #. Take a moment to browse to any website to confirm that DNS isn't broken, and to generate some DoH requests for the logs we are about to review.
 
 
-Test the DoH Guardian Service Extension functionality
+Test the DoH Guardian Service Extension logging functionality
 -------------------------------------------------------------------------
 
 So far, we have inspected the **doh-guardian-irule**,  added the **ssloS_F5_DoH** Service to the existing **Service Chain**, and setup **Firefox** to use Google's DoH server for all DNS queries.
@@ -138,12 +138,21 @@ This lab is automatically configured to log all DNS-over-HTTPS requests to the l
 
    .. image:: images/doh-logging.png
       :align: left
-      :width: 1600
+      :width: 1800 
       :height: 80
 
    .. note::
 
       Please let an instructor know if you do not see any logs.
+
+#. To breakdown the log entries, it's going to log the following information:
+
+   - **Client IP Address**
+   - **DoH Server IP Address**
+   - **query name**
+   - **query type**
+   - **version & id**
+   - **URL category**
 
 
 
