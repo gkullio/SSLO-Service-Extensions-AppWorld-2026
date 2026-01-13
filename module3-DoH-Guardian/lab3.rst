@@ -114,7 +114,7 @@ Configure the Firefox browser in the Ubuntu-Client to use Google's DoH server
 #. After configuring, close and reopen **Firefox**.
 
 
-Test the DoH Guardian Service Extension *blackhole* functionality
+Test the DoH Guardian Service Extension functionality
 -------------------------------------------------------------------------
 
 So far, we have inspected the **doh-guardian-irule**,  added the **ssloS_F5_DoH** Service to the existing **Service Chain**, and setup **Firefox** to use Google's DoH server for all DNS queries.
@@ -135,6 +135,7 @@ Logging is setup automatically in this lab to log all DNS-over-HTTPS requests to
       :align: left
 
 
+#. Leave the **Web Shell** tab open, as we will come back to it in a moment.
 
 
 Enable the *blackhole* feature
@@ -148,12 +149,13 @@ In this implementation, a DoH blackhole responds to the client with either a 199
 
 #. Let's enable blackhole feature to block any DoH requests that are categorized as *Sports*.
 
+Start by opening the doh-guardian-rule in the BIG-IP SSLO GUI tab, create a new line after line 43 and add the following:
+``/Common/Sports``
+
+It should look like this after you make the changes:
+
    .. image:: images/doh-blackhole-enabled.png
       :align: left
-
-   .. note::
-
-      You will need to modify the **DOH_BLACKHOLE_BY_CATEGORY** and **DOH_BLACKHOLE_BY_CATEGORY_ACTION** parameters in the **doh-guardian-rule** iRule to enable the blackhole functionality.
 
 Conclusion
 ----------
