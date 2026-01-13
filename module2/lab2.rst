@@ -109,19 +109,5 @@ Verify Object Creation
 
 |
 
-
-Configure NTP Dependencies for BIG-IP SSLO Deployments
-------------------------------------------------------
-
-The base network configurations have been pre-configured for you, however, the settings for NTP are missing.
-
-#. To define the NTP server configuration:
-   - Click on System > Configuration : Device : NTP 
-   - Enter ``pool.ntp.org`` in the **Address** field.
-   - Click **Add** then **Update**
-   
-   .. image:: images/update-ntp.png
-      :align: left
-
 This completes the installation of the configuration objects needed to support the **user coaching** function. In a later step, you will add the resulting **ssloS_F5_UC** inspection Service to a decrypted traffic Service Chain and add the **user-coaching-ja4t-rule** iRule to the L3 Outbound Topology's Interception Rule.
 
