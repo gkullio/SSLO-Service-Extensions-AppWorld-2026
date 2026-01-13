@@ -13,7 +13,7 @@ During this lab, we will perform the following actions:
 
 |
 
-Review the DoH Guardian iRule *doh-guardian-irule*
+Review the DoH Guardian iRule: *doh-guardian-irule*
 ---------------------------------------------------
 
 #. Go to the **BIG-IP SSLO** GUI tab and navigate to **Local Traffic > iRules** and click on the **doh-guardian-irule** iRule to view the contents.
