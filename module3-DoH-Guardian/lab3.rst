@@ -180,11 +180,15 @@ In this implementation, a DoH blackhole responds to the client with either a 199
    .. image:: images/doh-blackhole-enabled.png
       :align: left
 
-#. Go to the bottom of the page and click **Update**.  Please let an instructor know if any errors are displayed.
+#. Go to the bottom of the page and click **Update**.
+
+   .. note::
+
+      Please let an instructor know if any errors are displayed.  
 
 #. Go back to the **Ubuntu-Client** GUI tab in your web browser and close and reopen the **Firefox Browser**.
 
-#. Now that we have blocked the *Sports* category, let's try to access a website that is categorized as such.
+#. Now that we have setup blocking for the the *Sports* URL category, let's try to access a website that is categorized as such.
 
    - ``www.nfl.com``
    - ``www.nba.com``
