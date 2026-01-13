@@ -102,8 +102,6 @@ Configure the Firefox browser in the Ubuntu-Client to use Google's DoH server
 
 #. In the **Choose provider** text box, type the following:
 
-|
-
    .. code-block:: text
 
       https://dns.google/dns-query
@@ -113,9 +111,8 @@ Configure the Firefox browser in the Ubuntu-Client to use Google's DoH server
    .. image:: images/doh-firefox-configure-2.png
       :align: left
 
-#. After configuring you can close and reopen **Firefox**.
+#. After configuring, close and reopen **Firefox**.
 
-|
 
 Test the DoH Guardian Service Extension *blackhole* functionality
 -------------------------------------------------------------------------
@@ -140,8 +137,8 @@ Logging is setup automatically in this lab to log all DNS-over-HTTPS requests to
 
 
 
-Enable the *blackhole* mode on the DoH Guardian iRule to block any DoH requests that are categorized as *Sports*
----------------------------------------------------------------------------------------------------------------- 
+Enable the *blackhole* feature
+------------------------------ 
 
 By definition, a DNS blackhole essentially diverts a DNS client to nothing. A DNS blackhole will either drop the request entirely or respond with an NXDOMAIN. However, a browser that fails in getting a DoH response will almost always retry with regular DNS, making this a less effective option for blocking DoH queries. To properly blackhole a DoH request, the client must receive an actual response, but to something that does not exist. 
 
@@ -149,7 +146,14 @@ In this implementation, a DoH blackhole responds to the client with either a 199
 
 |
 
-#. Entry 1
+#. Let's enable blackhole feature to block any DoH requests that are categorized as *Sports*.
+
+   .. image:: images/doh-blackhole-enabled.png
+      :align: left
+
+   .. note::
+
+      You will need to modify the **DOH_BLACKHOLE_BY_CATEGORY** and **DOH_BLACKHOLE_BY_CATEGORY_ACTION** parameters in the **doh-guardian-rule** iRule to enable the blackhole functionality.
 
 Conclusion
 ----------
