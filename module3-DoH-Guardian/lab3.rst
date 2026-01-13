@@ -168,11 +168,10 @@ In this implementation, a DoH blackhole responds to the client with either a 199
 
 ````
 
-|
 
 #. Let's enable blackhole feature to block any DoH requests that are categorized as **Sports**.
 
-#. Start by opening the **doh-guardian-rule** in the BIG-IP SSLO GUI tab, create a new line after line 43 and add the following:
+#. Start by opening the **doh-guardian-rule** in the **BIG-IP SSLO GUI** tab, create a new line after line 43 and add the following:
    
    - **/Common/Sports**
 
@@ -181,15 +180,23 @@ In this implementation, a DoH blackhole responds to the client with either a 199
    .. image:: images/doh-blackhole-enabled.png
       :align: left
 
+#. Go to the bottom of the page and click **Update**.  Please let an instructor know if any errors are displayed.
 
 #. Go back to the **Ubuntu-Client** GUI tab in your web browser and close and reopen the **Firefox Browser**.
 
 #. Now that we have blocked the *Sports* category, let's try to access a website that is categorized as such.
 
-- **www.nfl.com**
-- ``www.nba.com``
+   - ``www.nfl.com``
+   - ``www.nba.com``
 
-   .. image:: images/doh-blackhole-enabled-1.png
+   .. image:: images/doh-blackhole-enabled-1-nfl.png
+      :align: left
+
+#. Since we sent all requests in the *Sports* category to the blackhole, you should see something similar to a **Reset Error** in **Firefox**.
+
+#. Go back to the **Web Shell** tab and view the logs again. You might need to scroll up to find the *blackhole* log entry.
+
+   .. image:: images/doh-blackhole-logs-success.png
       :align: left
 
 
