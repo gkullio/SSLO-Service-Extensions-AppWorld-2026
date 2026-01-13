@@ -139,7 +139,7 @@ Logging is setup automatically in this lab to log all DNS-over-HTTPS requests to
 
    .. image:: images/doh-logging.png
       :align: left
-      :width: 1524
+      :width: 1600
       :height: 100
 
 
