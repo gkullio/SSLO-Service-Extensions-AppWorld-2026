@@ -133,16 +133,18 @@ This lab is automatically configured to log all DNS-over-HTTPS requests to the l
 
       tail -f /var/log/ltm
 
-   .. note::
+|
 
-      You should see a few entries in the logs since we closed and reopened **Firefox**.
+#. You should see a few entries in the logs since we closed and reopened **Firefox** and surfed to a couple site.
 
    .. image:: images/doh-logging.png
       :align: left
       :width: 1600
       :height: 85
 
+   .. note::
 
+      Please let an instructor know if you do not see any logs.
 
 
 
