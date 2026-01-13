@@ -194,7 +194,7 @@ In this implementation, a DoH blackhole responds to the client with either a 199
 
 #. Since we sent all requests in the *Sports* category to the blackhole, you should see something similar to a **Reset Error** in **Firefox**.
 
-#. Go back to the **Web Shell** tab and view the logs again. You might need to scroll up to find the *blackhole* log entry.
+#. Go back to the **Web Shell** tab and scroll up to find the *blackhole* log entry. You should see something similar to the following:
 
    .. image:: images/doh-blackhole-logs-success.png
       :align: left
