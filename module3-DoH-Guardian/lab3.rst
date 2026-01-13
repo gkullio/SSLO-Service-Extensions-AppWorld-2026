@@ -125,7 +125,7 @@ Test the DoH Guardian Service Extension functionality
 
 So far, we have inspected the **doh-guardian-irule**,  added the **ssloS_F5_DoH** Service to the existing **Service Chain**, and setup **Firefox** to use Google's DoH server for all DNS queries.
 
-Logging is setup automatically in this lab to log all DNS-over-HTTPS requests to the local log file (/var/log/ltm). 
+This lab is automatically configured to log all DNS-over-HTTPS requests to the local log file (/var/log/ltm). 
 
 #. Go back to your **BIG-IP SSLO** in your UDF Environment and open the **Web Shell**.  From there you can view the running logs with the following command:  
 
@@ -140,7 +140,9 @@ Logging is setup automatically in this lab to log all DNS-over-HTTPS requests to
    .. image:: images/doh-logging.png
       :align: left
       :width: 1600
-      :height: 100
+      :height: 85
+
+
 
 
 
