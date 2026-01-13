@@ -127,20 +127,19 @@ So far, we have inspected the **doh-guardian-irule**,  added the **ssloS_F5_DoH*
 
 This lab is automatically configured to log all DNS-over-HTTPS requests to the local log file (/var/log/ltm). 
 
-#. Go back to your **BIG-IP SSLO** in your UDF Environment and open the **Web Shell**.  From there you can view the running logs with the following command:  
+#. Go back to your **BIG-IP SSLO** in your UDF Environment and open the **Web Shell**.  From there you can view the running logs with the following command.  
 
    .. code-block:: text
 
       tail -f /var/log/ltm
 
-|
 
 #. You should see a few entries in the logs since we closed and reopened **Firefox** and surfed to a couple site.
 
    .. image:: images/doh-logging.png
       :align: left
       :width: 1600
-      :height: 85
+      :height: 80
 
    .. note::
 
