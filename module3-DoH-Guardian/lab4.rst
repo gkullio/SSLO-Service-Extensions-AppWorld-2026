@@ -12,8 +12,8 @@ During this portion, we will perform the following tasks:
 
 |
 
-How does *sinkhole* mode work?
-------------------------------
+How does the *sinkhole* functionality work?
+-------------------------------------------
 
 In a sinkhole response, the resolver sends back an IP address that points to a local blocking server. In contrast to a blackhole, a DNS sinkhole is diverting to something. The sinkhole destination is then able to respond to the client's request, so instead of just dying, the user might get a blocking page instead. In a DoH/DNS sinkhole without SSL Orchestrator, a client would initiate a TLS handshake to this server (believing it's the real site) and would get a certificate error because the server certificate on that blocking server doesn't match the Internet hostname requested by the client. 
 
