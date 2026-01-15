@@ -102,7 +102,7 @@ Configure the Firefox browser in the Ubuntu-Client to use Google's DoH server
    .. image:: images/doh-firefox-configure.png
       :align: left
 
-#. In order to force all browsing to use DNS-over-HTTPS, click the **Increased Protection** radial button. 
+#. In order to force all browsing to use DNS-over-HTTPS, click the **Max Protection** radial button. 
 
 #. In the **Choose provider** text box, type the following:
 
