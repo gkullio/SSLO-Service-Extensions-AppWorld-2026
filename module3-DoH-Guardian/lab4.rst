@@ -108,7 +108,7 @@ With the **Sinkhole** configuration created, we need to create a new L3 Outbound
    .. image:: images/l3outbound-ssl.png
       :align: left
 
-#. SCroll to the ``Expire Certificate Response`` and ``Untrusted Certificate Authority`` and mark both from *drop* to **mask**
+#. Scroll to the ``Expire Certificate Response`` and ``Untrusted Certificate Authority`` and mark both from *drop* to **mask**
 
    .. image:: images/doh-sinkhole-ssl-mask.png
       :align: left
