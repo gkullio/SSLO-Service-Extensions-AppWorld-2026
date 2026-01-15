@@ -90,7 +90,7 @@ With the **Sinkhole** configuration created, we need to create a new L3 Outbound
 
 #. In the **CA Certificate Key Chain** section, click on the **Edit** (pencil) icon.
 
-   .. image:: images/l3_outbound_ca-ssl-edit-btn.png
+   .. image:: images/l3_outbound_ca_ssl-edit-btn.png
       :align: left
 
 
@@ -99,7 +99,7 @@ With the **Sinkhole** configuration created, we need to create a new L3 Outbound
 
 #. In the **Key** drop-down list, select **subrsa.f5labs.com** to replace the default value.
 
-   .. image:: images/l3_outbound_ca-ssl.png
+   .. image:: images/l3_outbound_ca_ssl.png
       :align: left
 
 
