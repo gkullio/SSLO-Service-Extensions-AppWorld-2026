@@ -168,7 +168,7 @@ Modify the *doh-guardian-rule* iRule
    - **/Common/Sports**
    - **/Common/Entertainment**
 
-|
+
 
    .. note:: 
       While adding the URL categories to the sinkhole portion, we will also remove the ``/Common/Sports`` category from the **blackhole** portion of the rule.
