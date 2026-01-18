@@ -138,6 +138,26 @@ With the **Sinkhole** configuration created, we need to create a new L3 Outbound
       :align: left
 
 
+Modify Interception Rule
+------------------------
+
+#. From the SSL Orchestrator Configuration Screen, click on Interception Rules and select the ``sslo_doh_sinkhole-in-t-4`` rule.
+
+   .. image:: images/doh-sinkhole-int-rule.png
+      :align: left
+
+#. Click on the pencil (edit) icon to modify the rule. 
+
+#. Scroll down to the **Resources/** section and add the ``sinkhole-target-rule`` to the Selected Box.  Ignore all other settings and click **Save & Next**.
+
+   .. image:: images/doh-sinkhole-int-rule-edit.png
+      :align: left
+
+#. Click **Deploy**
+
+
+At this time, the new L3 Outbound Topology has been created and deployed.  The topology is now ready to be used to block DoH requests once the specific categories to block are configured in the ``doh-guardian-rule``.  Move on to the next section to configure the categories to block and setup **Firefox** to properly enable **sinkhole** functionality.
+
 
 
 
