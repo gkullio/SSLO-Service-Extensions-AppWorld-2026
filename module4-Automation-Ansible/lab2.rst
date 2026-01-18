@@ -43,11 +43,11 @@ This lab uses modules from both collections.
 
 .. |f5_ssl_orchestrator_collection_link| raw:: html
 
-      <a href="https://clouddocs.f5.com/products/orchestration/ansible/devel/sslo/sslo-collection.html" target="_blank"> F5 SSL Orchestrator Collection </a>
+      <a href="https://clouddocs.f5.com/products/orchestration/ansible/devel/sslo/sslo-collection.html" target="_blank"> SSLO Collection </a>
 
 .. |f5_ssl_orchestrator_api_link| raw:: html
 
-      <a href="https://github.com/f5devcentral/sslo-api-reference/tree/main" target="_blank"> F5 SSL Orchestrator API Reference </a>
+      <a href="https://github.com/f5devcentral/sslo-api-reference/tree/main" target="_blank"> SSLO API Reference </a>
 
 .. |f5_atc_link| raw:: html
 
