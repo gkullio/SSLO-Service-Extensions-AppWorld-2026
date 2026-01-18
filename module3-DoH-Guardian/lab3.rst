@@ -166,12 +166,11 @@ By definition, a DNS blackhole essentially diverts a DNS client to nothing. A DN
 
 In this implementation, a DoH blackhole responds to the client with either a 199.199.199.199 IPv4 address for an A request, or 0:0:0:0:0:ffff:c7c7:c7c7 IPv6 address for a AAAA request.
 
-````
 
 
 #. Let's enable blackhole feature to block any DoH requests that are categorized as **Sports**.
 
-#. Start by opening the **doh-guardian-rule** in the **BIG-IP SSLO GUI** tab, create a new line after line 43 and add the following:
+#. Start by opening the **doh-guardian-rule** in the **Local Traffic > iRules > iRule List**, create a new line after line 43 and add the following:
    
    - **/Common/Sports**
 

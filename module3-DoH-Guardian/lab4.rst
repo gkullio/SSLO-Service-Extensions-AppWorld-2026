@@ -155,62 +155,50 @@ Modify Interception Rule
 
 #. Click **Deploy**
 
+Modify the *doh-guardian-rule* iRule
+------------------------------------
 
-At this time, the new L3 Outbound Topology has been created and deployed.  The topology is now ready to be used to block DoH requests once the specific categories to block are configured in the ``doh-guardian-rule``.  Move on to the next section to configure the categories to block and setup **Firefox** to properly enable **sinkhole** functionality.
+#. Start by opening the **doh-guardian-rule** in the **Local Traffic > iRules > iRule List**
 
+   .. image:: images/doh-sinkhole-ltm-rule.png
+      :align: left
+   
+#. We are going to add the following lines to the **sinkhole** portion of the rule.
 
+   - **/Common/Sports**
+   - **/Common/Entertainment**
 
+   .. note:: 
+      While adding the URL categories to the sinkhole portion, we will also remove the ``/Common/Sports`` category from the **blackhole** portion of the rule.
 
+#. Your iRule should look like the following:
 
+   .. image:: images/doh-sinkhole-rule-modify.png
+      :align: left
 
-
-
-
-
-
-
-
-
-
-
-
-
-#. To create the SSL Orchestrator sinkhole listener topology. Any section not mentioned below can be skipped:
-
-Topology Properties
-
-Protocol: TCP
-SSL Orchestrator Topologies: select L3 Outbound
-SSL Configuration
-
-Click on "Show Advanced Setting"
-CA Certificate Key Chain: select the correct client-trusted internal signing CA certificate and key
-Expire Certificate Response: Mask
-Untrusted Certificate Response: Mask
+#. Click **Update**
 
 |
 
-Security Policy
+Conclusion
+----------
 
-|
-
-Delete the Pinners_Rule
-
-|
-
-Interception Rule
-
-|
-
-Destination Address/Mask: 
-   - enter the client-facing IP address/mask. This will be the address sent to clients from the DNS for the sinkhole. (ex. 10.1.10.160%0/32)
-   - Ingress Network/VLANs: select the client-facing VLAN
-   - Protocol Settings/SSL Configurations: ensure the previously-created SSL configuration is selected
+At this time, the following changes and updates have been made:
+- L3 Outbound Topology has been created and deployed.  
+- The Interception Rule has been updated to include the ``sinkhole-target-rule`` iRule.  
+- The ``doh-guardian-rule`` has been updated to **sinkhole** the URL categories ``Sports`` and ``Entertainment``.
 
 
-Ignore all other settings and Deploy. Once deployed, navigate to the Interception Rules tab and edit the new sinkhole topology interception rule.
 
-Resources/iRules: 
-   - add the sinkhole-target-rule iRule
-   - Ignore all other settings and Deploy.
+
+
+
+
+
+
+
+
+
+
+
 
