@@ -61,6 +61,5 @@ This is an example of a redirect to a splash page that includes additional metad
 
    .. code-block:: text
 
-      when HTTP_REQUEST {
-  HTTP::redirect "https://splash.f5labs.com/?cats=gis-dns-block&client_ip=[IP::client_addr]&type=dns&url=[URI::encode [b64encode [HTTP::host]]]"
-}
+      when HTTP_REQUEST { HTTP::redirect "https://splash.f5labs.com/?cats=gis-dns-block&client_ip=[IP::client_addr]&type=dns&url=[URI::encode [b64encode [HTTP::host]]]" }
+
