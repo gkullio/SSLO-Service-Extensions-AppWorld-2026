@@ -182,6 +182,20 @@ Modify the *doh-guardian-rule* iRule
 
 |
 
+Enable Firefox to accept RFC1918 addresses as a Trusted Recursive Resolver (TRR)
+--------------------------------------------------------------------------------
+
+#. If you have closed the **Ubuntu-Client WEBRDP** session, open it again.
+
+#. Open the **Firefox** browser and navigate to ``about:config``, and accept the risk.
+
+#. Search for ``network.trr.allow-rfc1918`` and set it to ``true`` with the toggle switch.  It should look like the following:
+
+   .. image:: images/doh-sinkhole-firefox-trr.png
+      :align: left
+
+#. After setting the toggle switch, close and reopen the browser. 
+
 Conclusion
 ----------
 
@@ -190,5 +204,7 @@ At this time, the following changes and updates have been made.
    - L3 Outbound Topology has been created and deployed for DoH sinkhole functionality.  
    - The Interception Rule has been updated to include the ``sinkhole-target-rule`` iRule.  
    - The ``doh-guardian-rule`` has been updated to **sinkhole** the URL categories ``Sports`` and ``Entertainment``.
+   - Configured the **Firefox** browser in the **Ubuntu-Client** to accept the RFC1918 sinkhole IP address as a Trusted Recursive Resolver (TRR).
 
-Next we will configure the **Firefox** browser in the **Ubuntu-Client** to accept the RFC1918 sinkhole IP address as a Trusted Recursive Resolver (TRR). 
+
+In the next section, we will test the DoH Guardian Sinkhole functionality with browser and curl.
