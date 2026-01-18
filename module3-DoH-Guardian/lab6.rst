@@ -7,9 +7,9 @@ In this lab, you completed the following tasks:
 
 -  Used the DoH Guardian Service to initially inspect and apply controls to blackhole requests that match against specific URL categories.
 
--  Implemented a method to sinkhole requests and utilize a blocking page to display to a user, when and why a request was blocked.
+-  Created a new **L3 Outbound Proxy** and stacked the DoH Guardian Service to the existing Service Chain.
 
--  Used the existing **L3 Outbound Proxy** and stacked the DoH Guardian Service to the existing Service Chain.
+-  Implemented a method to sinkhole requests and utilize a blocking page to display to a user, when and why a request was blocked.
 
 |
 
