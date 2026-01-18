@@ -34,6 +34,7 @@ Test the DoH Guardian Sinkhole Functionality
    .. image:: images/doh-sinkhole-cli.png
       :align: left
 
+
 #. Run the following commands:
 
    .. code-block:: text
@@ -43,6 +44,9 @@ Test the DoH Guardian Sinkhole Functionality
    .. code-block:: text
 
       curl -k --doh-insecure --doh-url https://dns.google/dns-query https://www.nfl.com
+
+   .. note:: The --doh-insecure command requires Curl 1.76.1 and higher
+
 
 #. If setup correctly, the CLI should display the blocking response.
 
