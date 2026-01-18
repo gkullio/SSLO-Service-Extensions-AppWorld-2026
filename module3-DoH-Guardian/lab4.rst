@@ -187,21 +187,8 @@ Conclusion
 
 At this time, the following changes and updates have been made.
 
-   - L3 Outbound Topology has been created and deployed.  
+   - L3 Outbound Topology has been created and deployed for DoH sinkhole functionality.  
    - The Interception Rule has been updated to include the ``sinkhole-target-rule`` iRule.  
    - The ``doh-guardian-rule`` has been updated to **sinkhole** the URL categories ``Sports`` and ``Entertainment``.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Next we will configure the **Firefox** browser in the **Ubuntu-Client** to accept the RFC1918 sinkhole IP address as a Trusted Recursive Resolver (TRR). 
