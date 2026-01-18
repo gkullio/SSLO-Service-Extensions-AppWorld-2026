@@ -185,10 +185,11 @@ Modify the *doh-guardian-rule* iRule
 Conclusion
 ----------
 
-At this time, the following changes and updates have been made:
-- L3 Outbound Topology has been created and deployed.  
-- The Interception Rule has been updated to include the ``sinkhole-target-rule`` iRule.  
-- The ``doh-guardian-rule`` has been updated to **sinkhole** the URL categories ``Sports`` and ``Entertainment``.
+At this time, the following changes and updates have been made.
+
+   - L3 Outbound Topology has been created and deployed.  
+   - The Interception Rule has been updated to include the ``sinkhole-target-rule`` iRule.  
+   - The ``doh-guardian-rule`` has been updated to **sinkhole** the URL categories ``Sports`` and ``Entertainment``.
 
 
 
