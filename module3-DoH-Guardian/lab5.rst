@@ -35,7 +35,7 @@ Test the DoH Guardian Sinkhole Functionality
       :align: left
 
 
-#. Run the following commands:
+#. Run the following commands (use Shift-Ctrl-V for Windows, and Option-Shift-Command-V for Mac) 
 
    .. code-block:: text
 
