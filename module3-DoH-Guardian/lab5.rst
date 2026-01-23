@@ -54,8 +54,8 @@ Test the DoH Guardian Sinkhole Functionality
       :align: left
 
 
-Results
--------
+Results & Additional Blocking Options
+-------------------------------------
 
 The result of both tests above should be the "Site Blocked!" page with a certificate forged by SSL Orchestrator. Injecting a static HTML response blocking page is just one option among many. You could, for example, issue a redirect instead of static HTML, and send the client to a more formal "splash page". This redirect could inject additional metadata to provide to the splash page. 
 
