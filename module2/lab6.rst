@@ -62,6 +62,9 @@ The presentation of the user coaching prompt is determined by a URL category mat
 
       Commented out the default cookie persistence method and uncommented the JA4 persistence method.
 
+
+#. Click on the **Update** button to save the changes.
+
 |
 
 Test User Coaching with JA4 Persistence Method
