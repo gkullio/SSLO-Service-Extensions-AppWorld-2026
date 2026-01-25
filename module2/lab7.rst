@@ -43,11 +43,9 @@ Test User Justification
 
 #. Close the **Firefox** browser window and restart the application.
 
-#. Navigate to https://copilot.microsoft.com/ again. Since you acknowledged the user coaching prompt previously (without requiring justification), you will not be prompted again.
+#. Navigate to https://chatgpt.com/. Now, the user coaching prompt appears but also includes a text box for users to enter a justification/reason for accessing that destination.
 
-#. Navigate to a new site: https://gemini.google.com/. Now, the user coaching prompt appears but also includes a text box for users to enter a justification/reason for accessing that destination.
-
-   .. image:: ./images/user-justification-6.png
+   .. image:: ./images/uc-user-justification-1.png
       :align: left
 
 #. Enter ``research and testing`` in the text box and click on the **Submit** button to acknowledge the warning and terms of use policy. You will then be presented with the requested destination web site.
@@ -62,7 +60,7 @@ The user coaching iRule has logging enabled (currently local logging, but could 
 
 #. Return to the **BIG-IP SSL Orchestrator** **Web Shell** tab.
 
-#. Enter ``grep ALERT-COACHING-TRIGGER /var/log/ltm`` to extract the user coaching logs from the LTM log file. You should see log entries similar to the following:
+#. Enter ``grep ALERT-COACHING-TRIGGER /var/log/ltm`` to extract the user coaching logs from the LTM log file. You should see log entries similar to the following: ``ALERT-COACHING-TRIGGER::2026-01-25 13:44:42::client=10.1.10.50::host=chatgpt.com::justification=research+and+testing``
 
    .. image:: ./images/user-justification-7.png
       :align: left
