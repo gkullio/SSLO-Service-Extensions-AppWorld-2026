@@ -57,7 +57,7 @@ The presentation of the user coaching prompt is determined by a URL category mat
 #. Ensure the user-coaching-rule iRule is updated to use the JA4 persistence method and looks like the following:  
 
    .. figure:: images/uc-ja4-enable.png
-      :alt: JA4 Persistence Method 
+      :alt: JA4 Persistence Method
       :align: left
 
       Commented out the default cookie persistence method and uncommented the JA4 persistence method.
