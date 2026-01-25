@@ -93,7 +93,8 @@ The presentation of the user coaching prompt is determined by a URL category mat
 
 #. Notice that the **COOKIE_IDENT** section variables define the cookie persistence settings. You can encrypt the cookie value with an AES value of your choice. If you do not encrypt the cookie value, the cookie will be stored in plain text.  
 
-   .. image:: images/uc-cookie-key-1.png
+   .. figure:: images/uc-cookie-key-1.png
+      :alt: Unencrypted Cookie Value
       :align: left
 
 
