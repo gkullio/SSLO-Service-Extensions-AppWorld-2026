@@ -106,7 +106,10 @@ The presentation of the user coaching prompt is determined by a URL category mat
       :align: left
 
       Encrypted Cookie Value Settings
-|
+
+#. Whichever method you decide to use, *encrypted* or *unencrypted*, ensure you click on the **Update** button to save any changes.
+
+
 
 Test User Coaching
 --------------------------------------------------------------------------------
