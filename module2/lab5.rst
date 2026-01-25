@@ -1,51 +1,13 @@
-Implement User Coaching
+Implement User Coaching with Default Cookie Persistence Method
 ==============================================================================
 
 You will now enable and test the **user coaching** functionality. This will produce a prompt in the web browser when a user attempts to connect to a *risky AI* web site.
 
 
-
-Modify Interception Rule
---------------------------------------------------------------------------------
-
-#. In the **SSL Orchestrator UI**, click on the **Interception Rules** tab.
-
-   .. image:: ./images/user-coaching-1.png
-      :align: left
-
-
-#. Click on the **sslo_l3_outbound-in-t-4** Interception Rule to view the **Summary** page.
-
-   .. image:: ./images/user-coaching-2.png
-      :align: left
-
-
-#. Click on the **Edit** (pencil) icon to view the settings.
-
-#. Scroll down to the **Resources > iRules** section and double-click on the **/Common/user-coaching-ja4t-rule** iRule to add it to the **Selected** panel. ``**Do not move the user-coaching-rule. This rule is already applied to the internal virtual server**``
-
-
-   .. image:: ./images/user-coaching-3.png
-      :align: left
-
-
-#. Click on the **Save & Next** button to return to the **Summary** page.
-
-   .. image:: ./images/user-coaching-4.png
-      :align: left
-
-
-#. Click on the **Deploy** button.
-
-#. When the deployment has completed, click on the **OK** button to close the dialog box and return to the **Topologies** list.
-
-
-|
-
 Add User Coaching Inspection Service to a Service Chain
 --------------------------------------------------------------------------------
 
-Create a new service chain that contains the user coaching service.
+Create a new Service Chain that contains the user coaching service (ssloS_F5_UC).
 
 
 #. Click on the **Service Chains** tab.
