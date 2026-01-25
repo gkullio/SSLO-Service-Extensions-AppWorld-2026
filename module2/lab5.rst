@@ -89,18 +89,14 @@ The presentation of the user coaching prompt is determined by a URL category mat
 
 #. Navigate to **Local Traffic > iRules** and verify that the following iRules are present.
 
-#. Click on the **user-coaching-rule** iRule to view it.
+#. Click on the **user-coaching-rule** iRule to view and modify it.
 
-#. Notice that the **COACHING_CATEGORIES** variable defines an array of URL categories.
+#. Notice that the **COOKIE_IDENT** section variables define the cookie persistence settings. You can encrypt the cookie value with an AES value of your choice. If you do not encrypt the cookie value, the cookie will be stored in plain text.  
 
-   .. image:: images/user-coaching-trigger.png
+   .. image:: images/uc-cookie-key-1.png
+      :title: Unencrypted Cookie Value
       :align: left
 
-   |
-
-   .. note::
-
-      Per the iRule comments, you can query the URL Category Database to determine the category names to use here. Do not change anything at this time.
 
 |
 
