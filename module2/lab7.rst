@@ -19,12 +19,12 @@ Modify User Coaching iRule
    .. image:: ./images/user-justification-2.png
       :align: left
 
-#. Below that, notice that the **JUSTIFICATION_LOGGING** variable is set to **""** (empty string).
+#. Below that, notice that the **REQUIRE_JUSTIFICATION** variable is set to ``0``.
 
    .. image:: ./images/user-justification-3.png
       :align: left
 
-#. In between the double quotation marks, enter ``on`` to enable this feature.
+#. Change the ``0`` to ``1`` to enable this feature.
 
    .. image:: ./images/user-justification-4.png
       :align: left
