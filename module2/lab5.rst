@@ -99,7 +99,7 @@ The presentation of the user coaching prompt is determined by a URL category mat
 
       Unencrypted Cookie Value Settings
 
-#. Alternatively, you can encrypt the cookie value with an AES value of your choice. 
+#. Alternatively, you can encrypt the cookie value with an AES value of your choice. In this example, remove the comment from the ``set static::COOKIE_KEY "AES 128 b55c4753cba6adaa0e4ea7640504d9b4"`` and add a comment to the ``set static::COOKIE_KEY ""`` line.
 
    .. figure:: images/uc-cookie-key-2.png
       :alt: Encrypted Cookie Value
