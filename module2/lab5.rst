@@ -91,13 +91,21 @@ The presentation of the user coaching prompt is determined by a URL category mat
 
 #. Click on the **user-coaching-rule** iRule to view and modify it.
 
-#. Notice that the **COOKIE_IDENT** section variables define the cookie persistence settings. You can encrypt the cookie value with an AES value of your choice. If you do not encrypt the cookie value, the cookie will be stored in plain text.  
+#. Notice that the **COOKIE_IDENT** section variables define the cookie persistence settings. By default, the cookie value is not encrypted.  
 
    .. figure:: images/uc-cookie-key-1.png
       :alt: Unencrypted Cookie Value
       :align: left
 
-      TEST TEST TEST
+      Unencrypted Cookie Value Settings
+
+#. Alternatively, you can encrypt the cookie value with an AES value of your choice. 
+
+   .. figure:: images/uc-cookie-key-2.png
+      :alt: Encrypted Cookie Value
+      :align: left
+
+      Encrypted Cookie Value Settings
 |
 
 Test User Coaching
