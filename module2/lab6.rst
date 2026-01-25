@@ -1,4 +1,4 @@
-Implement User Coaching with Optional JA4 Persistence Method
+OPTIONAL:Implement User Coaching with JA4 Persistence Method
 ==============================================================================
 
 You will now enable and test the **user coaching** functionality. This will produce a prompt in the web browser when a user attempts to connect to a *risky AI* web site.
@@ -42,83 +42,6 @@ Modify Interception Rule
 
 |
 
-Add User Coaching Inspection Service to a Service Chain
---------------------------------------------------------------------------------
-
-Create a new service chain that contains the user coaching service.
-
-
-#. Click on the **Service Chains** tab.
-
-   .. image:: ./images/user-coaching-5.png
-      :align: left
-
-
-#. From the **Service Chain List**, click on the **Add** button.
-
-#. Enter ``user_coaching`` in the **Name** field.
-
-#. Double-click on the **ssloS_F5_UC** Service to add it to the Service Chain. 
-
-   .. image:: ./images/user-coaching-6.png
-      :align: left
-
-
-#. Click on the **Deploy** button.
-
-#. When the deployment has completed, click on the **OK** button to close the dialog box and return to the **Topologies** list.
-
-#. Click on the **Service Chains** tab to confirm that the new **Service Chain** was created.
-
-   .. image:: ./images/user-coaching-7.png
-      :align: left
-
-
-Update the Security Policy
---------------------------------------------------------------------------------
-
-The final step is to update the **Security Policy** to use the new **Service Chain**.
-
-#. Click on the **Security Policies** tab to view the list of policies.
-
-#. Click on the **ssloP_l3_outbound** policy to edit it.
-
-   .. image:: ./images/user-coaching-8.png
-      :align: left
-
-#. Click on the **Edit** (pencil) icon for the **All Traffic** rule.
-
-
-   .. image:: ./images/user-coaching-9.png
-      :align: left
-
-
-#. Set **SSL Proxy Action** to **Intercept**.
-
-#. Set **Service Chain** to **ssloSC_user_coaching**.
-
-   .. image:: ./images/user-coaching-10.png
-      :align: left
-
-#. Click on the **OK** button to exit edit mode.
-
-   |
-
-   Your **Security Policy** should now look like the following:
-
-   .. image:: ./images/user-coaching-11.png
-      :align: left
-
-
-#. Click on the **Deploy** button and then click on **Deploy** again to accept the warning.
-
-   .. image:: ./images/user-coaching-12.png
-      :align: left
-
-#. When the deployment has completed, click on the **OK** button to close the dialog box and return to the **Topologies** list.
-
-
-|
 
 Trigger Conditions for User Coaching
 --------------------------------------------------------------------------------
@@ -142,7 +65,7 @@ The presentation of the user coaching prompt is determined by a URL category mat
 
 |
 
-Test User Coaching
+Test User Coaching with JA4 Persistence Method
 --------------------------------------------------------------------------------
 
 #. Return to the **Ubuntu-Client** WEBRDP session.

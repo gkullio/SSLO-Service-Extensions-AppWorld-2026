@@ -122,10 +122,10 @@ Test User Coaching
    .. image:: ./images/user-coaching-14.png
       :align: left
 
-#. Restart **Firefox** and browse to ChatGPT again. You should not see the prompt reappear because the original user coaching acknowledgement has not expired yet.
+#. Restart **Firefox** and browse to ChatGPT again. You will be prompted again because this persistence method is based on cookies and the original user coaching acknowledgement has expired.
 
    .. note::
 
-      The default user coaching session timeout setting is 3600 seconds. This value is configurable in the **user-coaching-rule** iRule.
-      **NEED TO ADDRESS THIS WITH KEVIN. Current behavior is that the prompt appears every time they access ChatGPT.**
+      Since this persistence method is based on cookies, the user will be prompted again when the user closes and restarts the browser.  
 
+#. If the desire is to have the user only be prompted once per assigned time period, then the JA4 persistence method should be used instead.  See **Optional** Lab 6 for more information and steps to accomplish.
