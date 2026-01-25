@@ -1,7 +1,7 @@
-OPTIONAL:Implement User Coaching with JA4 Persistence Method
+OPTIONAL: Implement User Coaching with JA4 Persistence Method
 ==============================================================================
 
-You will now enable and test the **user coaching** functionality. This will produce a prompt in the web browser when a user attempts to connect to a *risky AI* web site.
+You will now enable and test the **user coaching** functionality using the JA4 persistence method. This will produce a prompt in the web browser when a user attempts to connect to a *risky AI* web site.
 
 
 
