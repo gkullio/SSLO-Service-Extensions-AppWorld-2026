@@ -89,6 +89,5 @@ Test User Coaching with JA4 Persistence Method
 
    .. note::
 
-      The default user coaching session timeout setting is 3600 seconds. This value is configurable in the **user-coaching-rule** iRule.
-      **NEED TO ADDRESS THIS WITH KEVIN. Current behavior is that the prompt appears every time they access ChatGPT.**
+      The default user coaching session timeout setting is 3600 seconds. This value is configurable in the **user-coaching-rule** iRule under the ``SESSION_TIMER`` section.  ``set static::JA4_SESSION_TIMER 3600``
 
