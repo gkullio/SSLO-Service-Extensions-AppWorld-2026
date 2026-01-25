@@ -82,7 +82,7 @@ The final step is to update the **Security Policy** to use the new **Service Cha
 
 |
 
-Trigger Conditions for User Coaching
+Trigger Conditions for User Coaching with Cookie Persistence
 --------------------------------------------------------------------------------
 
 The presentation of the user coaching prompt is determined by a URL category match. The category list is defined in the **user-coaching-rule** iRule.

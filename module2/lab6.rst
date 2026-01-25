@@ -43,7 +43,7 @@ Modify Interception Rule
 |
 
 
-Trigger Conditions for User Coaching
+Trigger Conditions for User Coaching with JA4 Persistence Method
 --------------------------------------------------------------------------------
 
 The presentation of the user coaching prompt is determined by a URL category match. The category list is defined in the **user-coaching-rule** iRule.
@@ -52,16 +52,15 @@ The presentation of the user coaching prompt is determined by a URL category mat
 
 #. Click on the **user-coaching-rule** iRule to view it.
 
-#. Notice that the **COACHING_CATEGORIES** variable defines an array of URL categories.
+#. Notice that the **IDENTIFIER_TYPE** defines the variable for persistence.  In this case, ``ja4`` commented out and will need to be uncommented to use the JA4 persistence method.
 
-   .. image:: images/user-coaching-trigger.png
+#. Ensure the user-coaching-rule iRule is updated to use the JA4 persistence method and looks like the following:  
+
+   .. figure:: images/uc-ja4-enable.png
+      :alt: JA4 Persistence Method 
       :align: left
 
-   |
-
-   .. note::
-
-      Per the iRule comments, you can query the URL Category Database to determine the category names to use here. Do not change anything at this time.
+      Commented out the default cookie persistence method and uncommented the JA4 persistence method.
 
 |
 
