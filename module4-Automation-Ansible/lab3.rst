@@ -8,10 +8,13 @@ The |GitHub| SSLO API Reference repository contains sets of example playbooks to
   - *sslo-config-ssl-outbound.yaml*: Deploys an Outbound Layer 3 Transparent Proxy Topology 
   - |outbound-l3-topology-link|: Outbound Layer 3 Transparent Proxy Topology Playbook
 
-- **Outbound existing application Topology**
+- **Inline Layer 2**
 
-  - *config-sslo-existing-app-1sslo.yaml*: Deploy an SSL Orchestrator **existing application** configuration with Services, Service Chains, and Security Policy.
-  - *config-sslo-existing-app-2ltm.yaml*: Deploy a simple LTM application (VIP, SSL Profiles, Pool) and attach the SSL Orchestrator **existing application** Security Policy.
+  - *inspection-service-inlinel2.yaml*: Deploys an Inline Layer 2 Inspection Service
+  - |inline-l2-topology-link|: Inline Layer 2 Inspection Service Playbook
+
+- **Modify Existing Outbound Topology**
+
 
 - **Delete** Utility
 
@@ -30,3 +33,6 @@ The |GitHub| SSLO API Reference repository contains sets of example playbooks to
 
       <a href="https://github.com/f5devcentral/sslo-api-reference/blob/main/applications/sslo-config-ssl-outbound.yaml" target="_blank"> Outbound Layer 3 Transparent Proxy Topology Playbook </a>
 
+ .. |inline-l2-topology-link| raw:: html
+
+      <a href="https://github.com/f5devcentral/sslo-api-reference/blob/main/inspection-services/sslo-inspection-service-inlinel2.yaml" target="_blank"> Inline Layer 2 Inspection Service Playbook </a>

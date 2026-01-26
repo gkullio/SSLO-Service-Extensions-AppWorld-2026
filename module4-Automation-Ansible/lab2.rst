@@ -3,42 +3,37 @@ Ansible Modules for SSL Orchestrator
 
 F5 offers the following Ansible collections to create, edit, update, and delete configuration objects for BIG-IP:
 
-- F5 Imperative Collection for Ansible (f5_modules)
-- F5 Declarative Collection for Ansible (f5_bigip)
+- F5 Imperative Collection for Ansible: |galaxy_f5_modules_link|
+- F5 Declarative Collection for Ansible: |galaxy_f5_bigip_link|
 
-General documentation can be found here: |f5_ansible_link|
 
-- F5 SSL Orchestrator Collection: |f5_ssl_orchestrator_collection_link|
-- F5 SSL Orchestrator API Referense: |f5_ssl_orchestrator_api_link|
+F5 CloudDocs Reference for SSL Orchestrator:
 
-f5_modules
+- F5 SSL Orchestrator Collection Overview: |f5_ssl_orchestrator_collection_link|
+- F5 SSL Orchestrator API Reference: |f5_ssl_orchestrator_api_link|
+- General documentation can be found here: |f5_ansible_link|
+
+|
+
+Ansible Collection: f5networks.f5_modules
 --------------------------------------------------------------------------------
 This is the original collection that leverages F5's *imperative* API calls to provide granular BIG-IP object configuration.
 
-The complete module list is here: |f5_modules_link|
+The complete F5 CloudDocs module list is here: |f5_modules_link|
 
 
-f5_bigip
+Ansible Collection: f5networks.f5_bigip
 --------------------------------------------------------------------------------
 This is a newer collection that leverages F5's *declarative* API extensions such as those available with the  |f5_atc_link|. SSL Orchestrator configuration modules are also available here.
 
-The complete module list is here: |f5_bigip_link|
+The complete F5 CloudDocs module list is here: |f5_bigip_link|
 
 |
 
-.. attention::
 
-   As of May, 2022, the SSL Orchestrator modules are available as a pre-release **preview**, so they may contain bugs and are subject to change in functionality and/or usage syntax.
-
-|
-
-This lab uses modules from both collections.
+This lab uses modules from both the f5networks.f5_modules and f5networks.f5_bigip collections.
 
 
-**Additional references:**
-
-- |galaxy_f5_modules_link|
-- |galaxy_f5_bigip_link|
 
 
 .. |f5_ssl_orchestrator_collection_link| raw:: html
@@ -67,8 +62,8 @@ This lab uses modules from both collections.
 
 .. |galaxy_f5_modules_link| raw:: html
 
-      <a href="https://galaxy.ansible.com/f5networks/f5_modules" target="_blank"> Ansible Galaxy > f5_modules </a>
+      <a href="https://galaxy.ansible.com/f5networks/f5_modules" target="_blank"> F5Networks.f5_modules </a>
 
 .. |galaxy_f5_bigip_link| raw:: html
 
-      <a href="https://galaxy.ansible.com/f5networks/f5_bigip" target="_blank"> Ansible Galaxy > f5_bigip </a>
+      <a href="https://galaxy.ansible.com/f5networks/f5_bigip" target="_blank"> F5Networks.f5_bigip </a>
