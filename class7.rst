@@ -1,4 +1,4 @@
-SSLO Service Extensions: Plug, Play, Automate (AppWorld 2026 | 2 hours)
+SSLO 201: Service Extensions: Plug, Play, Automate (AppWorld 2026 | 2 hours)
 ===============================================================================================
 
 |
