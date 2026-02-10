@@ -1,4 +1,4 @@
-SSLO 201: Service Extensions: Plug, Play, Automate (AppWorld 2026 | 2 hours)
+SSLO 203: Service Extensions: Plug, Play, Automate (AppWorld 2026 | 2 hours)
 ===============================================================================================
 
 |
@@ -18,7 +18,7 @@ SSL Orchestrator was built to protect your organization from encrypted inbound a
 In this lab, you will learn how to:
 
 - Deploy an **L3 outbound** (transparent forward proxy) Topology as a base to build upon.
-- Implement user coaching for AI Chatbot sites (ChatGPT, Gemini, etc.)
+.. .. - Implement user coaching for AI Chatbot sites (ChatGPT, Gemini, etc.)
 - Implement a Service to inspect, protect, and block DNS-over-HTTPS requests
 - Deploy additional SSLO Services using the Ansible Automation tool.  
 
