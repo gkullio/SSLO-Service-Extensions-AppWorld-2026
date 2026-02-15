@@ -44,11 +44,8 @@ Building a new L3 Outbound Transparent Proxy with the Wireshark TAP Service
 Testing the new the Wireshark TAP Service
 -------------------------------------------------------------------------------
 
-.. 
-  comment:: Add an additional picture here to outline the TAP Service Flow from Client -> SSLO -> Service Chain -> TAP Service -> Wireshark. This will help to visualize the flow of traffic and how the TAP service is integrated into the topology.
-
-    .. image:: images/wireshark-tap-diag.png
-       :align: center
+   .. image:: images/wireshark-tap-diag.png
+      :align: center
 
 #. To test the new Wireshark TAP Service, we will be using the Ubuntu Server instance that is part of our lab environment. This instance has Wireshark installed and configured to capture traffic from the TAP service.
 
