@@ -44,8 +44,8 @@ Building a new L3 Outbound Transparent Proxy with the Wireshark TAP Service
 Testing the new the Wireshark TAP Service
 -------------------------------------------------------------------------------
 
-   .. image:: images/wireshark-tap-diag.png
-      :align: center
+.. image:: images/wireshark-tap-diag.png
+   :align: center
 
 #. To test the new Wireshark TAP Service, we will be using the Ubuntu Server instance that is part of our lab environment. This instance has Wireshark installed and configured to capture traffic from the TAP service.
 
