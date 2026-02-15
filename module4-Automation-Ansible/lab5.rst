@@ -43,7 +43,6 @@ Building a new L3 Outbound Transparent Proxy with the Wireshark TAP Service
 
 Testing the new the Wireshark TAP Service
 -------------------------------------------------------------------------------
-
 Wireshark TAP Service Flow Diagram
 
 .. image:: images/wireshark-tap-diag.png
@@ -53,8 +52,29 @@ Wireshark TAP Service Flow Diagram
 
 #. To test the new Wireshark TAP Service, we will be using the Ubuntu Server instance that is part of our lab environment. This instance has Wireshark installed and configured to capture traffic from the TAP service.
 
-Ubuntu-Server > Access > Wireshark TAP > double click eth1
+#. In the UDF Deployment screeen, click on the *ACCESS* dropdown on the Ubuntu-Server Instance and select *Wireshark TAP*.
 
-After you have the wireshark started, go back to the WebRDP session and generate some traffic by accessing a website that will be steered through the new L3 Outbound Transparent Proxy Topology. For example, you can try accessing ``http://www.f5.com``.
+.. image:: images/udf-wireshark-tap.png
+   :align: left
 
-Then go back to the Wireshark instance and you should see the traffic flowing through the TAP service in clear text. You can analyze the traffic to see the details of the requests and responses, as well as any potential issues or insights that can be gained from the traffic.  Notice everything is decrypted and in clear text, which is the benefit of having the TAP service in place to capture the traffic before it is re-encrypted and sent on to its destination.
+#. This will open a new browser tab and display the Wireshark interfaces available on the Ubuntu Server. Select the interface that corresponds to the incoming TAP service (it will be labeled ``eth1``) and double click on it to start viewing traffic.
+
+.. image:: images/wireshark-interfaces.png
+      :align: left
+
+.. note:: You may not see any traffic immediately. This is because the TAP service only captures traffic that is flowing through the new L3 Outbound Transparent Proxy Topology, so we will need to generate some traffic to see it in action.
+
+#. After you have the Wireshark captyre started, go back to the Ubuntu-Client WebRDP session and generate some traffic by accessing a website that will be steered through the new L3 Outbound Transparent Proxy Topology. For example, you can try accessing ``http://www.f5.com``.
+
+#. Then go back to the Wireshark instance and you should see the traffic flowing through the TAP service in clear text. You can analyze the traffic to see the details of the requests and responses, as well as any potential issues or insights that can be gained from the traffic.  Notice everything is decrypted and in clear text, which is the benefit of having the TAP service in place to capture the traffic before it is re-encrypted and sent on to its destination.
+
+.. image:: images/wireshark-capture.png
+      :align: left
+
+You can use various filters in Wireshark to focus on specific traffic of interest, such as filtering by IP address, protocol, or specific HTTP requests. This will allow you to gain deeper insights into the behavior of the traffic and the effectiveness of your SSL Orchestrator configuration.
+- http
+- dns
+- ip.src == <client IP address>
+- ip.dst == <destination IP address>
+- ip.src == <client IP address> && http
+
