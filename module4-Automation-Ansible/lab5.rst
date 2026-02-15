@@ -45,8 +45,11 @@ Testing the new the Wireshark TAP Service
 -------------------------------------------------------------------------------
 
 Wireshark TAP Service Flow Diagram
+
 .. image:: images/wireshark-tap-diag.png
    :align: center
+
+|
 
 #. To test the new Wireshark TAP Service, we will be using the Ubuntu Server instance that is part of our lab environment. This instance has Wireshark installed and configured to capture traffic from the TAP service.
 
