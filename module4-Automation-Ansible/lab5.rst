@@ -44,6 +44,7 @@ Building a new L3 Outbound Transparent Proxy with the Wireshark TAP Service
 Testing the new the Wireshark TAP Service
 -------------------------------------------------------------------------------
 
+Wireshark TAP Service Flow Diagram
 .. image:: images/wireshark-tap-diag.png
    :align: center
 
