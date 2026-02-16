@@ -1,4 +1,4 @@
-Ansible Environment Setup and Clearing Existing SSLO Configuration
+Ansible Environment Setup and Reset of Existing SSLO Configuration
 ================================================================================
 
 In order to ensure the proper execution of the Ansible Playbooks within this module, it is important to have a properly configured environment. This environment is provided through the **Ubuntu-Client** WebRDP session. This client is running VScode and will be the tool used to execute the Ansible Playbooks.
@@ -74,12 +74,11 @@ Explore Ansible Playbooks for F5 BIG-IP SSL Orchestrator
 
 #. Take a few moments to explore both the **appworld_ansible_playbooks** and **playbooks** directories to familiarize yourself with the structure and contents of the Ansible Playbooks that will be used in this module. This will help you understand how the playbooks are organized and how they interact with the F5 BIG-IP SSL Orchestrator environment.
 
-Here is an example of the structure of a playbook within the **appworld_ansible_playbooks** directory:
+#. Here is an example of the structure of a playbook within the **appworld_ansible_playbooks** directory:
 
    .. image:: images/vscode-playbook-structure.png
       :align: left
 
-|
 
 #. The fundamental structure of these F5 BIG-IP Ansible playbooks uses the following form, allowing for the **notahost** inventory tag (no hosts inventory needed) and environment variables passed into the playbook for the BIG-IP address and admin password.
 
@@ -87,32 +86,24 @@ Here is an example of the structure of a playbook within the **appworld_ansible_
 
       ansible-playbook -i notahost, appworld_ansible_playbooks/<name of playbook>.yaml
 
+|
 
-
-Completion of this section
---------------------------------
+Completion of this section and Lab Reset
+-----------------------------------------
 
 Now that we have enabled the Ansible environment and explored the playbooks, we are ready to move on to the next section where we will execute several Ansible Playbooks to automate tasks within the F5 BIG-IP SSL Orchestrator environment.
 
-.. 
-   comment:: 
-   This is where we will decide to delete all of the existing SSLO configuration to start from scratch with a new L3 Outbound Transparent Proxy.
-   REPLACEMENT TEXT:
+In order to have a fresh environment to work with, we will first execute the **remove-previous-config.yaml** playbook which will delete all existing Topologies, Security Policies, and SSL Configurations related to everything we've built so far. This will allow us to start with a clean slate as we work through the next sections of this module.
 
-   Now that we have enabled the Ansible environment and explored the playbooks, we are ready to move on to the next section where we will execute several Ansible Playbooks to automate tasks within the F5 BIG-IP SSL Orchestrator environment.
+.. code-block:: text
 
-   In order to have a fresh environment to work with, we will first execute the **remove-previous-config.yaml** playbook which will delete all existing Topologies, Security Policies, and SSL Configurations related to everything we've built so far. This will allow us to start with a clean slate as we work through the next sections of this module.
-   
-   .. note:: 
-      
-      This will keep the existing Services and Service Chains intact. This is intentional as it allows you to reuse services if needed if you want to rebuild or explore options.  
+   ansible-playbook -i notahost, appworld_ansible_playbooks/remove-previous-config.yaml
 
-      |
+|
 
-   .. code-block:: text
+.. note:: This will keep the existing Services and Service Chains intact. This is intentional as it allows you to reuse services if needed if you want to rebuild or explore options.  
 
-      ansible-playbook -i notahost, appworld_ansible_playbooks/remove-previous-config.yaml
-   
+|   
 
 .. |f5_bigip_link| raw:: html
 
